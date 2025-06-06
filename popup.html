@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Master</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <!-- Loading State -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Loading audio tabs...</p>
+    </div>
+
+    <!-- Error State -->
+    <div id="error-banner" class="error-banner" style="display: none;">
+        <span id="error-text">⚠️</span>
+        <button class="error-close" id="error-close">&times;</button>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="container" style="display: none;">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <span class="icon">🔊</span>
+                <h1>Volume Master</h1>
+            </div>
+            <div class="header-controls">
+                <button id="refresh-btn" class="refresh-btn" title="Refresh audio tabs">
+                    🔄
+                </button>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode">
+                    🌙
+                </button>
+            </div>
+        </div>
+
+        <!-- Volume Control Section -->
+        <div class="volume-section">
+            <div class="volume-header">
+                <span class="volume-icon" id="volume-icon">🔊</span>
+                <span class="volume-value" id="volume-value">100%</span>
+            </div>
+
+            <!-- Volume Slider -->
+            <div class="volume-control">
+                <input 
+                    type="range" 
+                    min="0" 
+                    max="600" 
+                    step="1"
+                    value="100"
+                    id="volume-slider"
+                    class="volume-slider"
+                >
+            </div>
+
+            <!-- Quick Volume Buttons -->
+            <div class="quick-controls">
+                <button data-volume="0" class="quick-btn">🔇</button>
+                <button data-volume="50" class="quick-btn">50%</button>
+                <button data-volume="100" class="quick-btn">100%</button>
+                <button data-volume="200" class="quick-btn">200%</button>
+                <button data-volume="400" class="quick-btn">400%</button>
+                <button data-volume="600" class="quick-btn">600%</button>
+            </div>
+
+            <!-- Volume Adjustment Buttons -->
+            <div class="volume-adjust">
+                <button id="decrease-volume" class="adjust-btn">-</button>
+                <button id="increase-volume" class="adjust-btn">+</button>
+            </div>
+        </div>
+
+        <!-- Audio Mode Section -->
+        <div class="audio-mode-section">
+            <label class="section-title">Audio Enhancement</label>
+            <div class="audio-modes">
+                <button 
+                    data-mode="default"
+                    class="mode-btn active"
+                    id="mode-default"
+                >
+                    <span class="mode-icon">🔊</span>
+                    <span class="mode-label">Default</span>
+                </button>
+                <button 
+                    data-mode="voice"
+                    class="mode-btn"
+                    id="mode-voice"
+                >
+                    <span class="mode-icon">🎤</span>
+                    <span class="mode-label">Voice</span>
+                </button>
+                <button 
+                    data-mode="bass"
+                    class="mode-btn"
+                    id="mode-bass"
+                >
+                    <span class="mode-icon">🎵</span>
+                    <span class="mode-label">Bass</span>
+                </button>
+            </div>
+            <!-- Mode applying indicator -->
+            <div id="mode-applying-indicator" class="applying-indicator">
+                <div class="spinner"></div>
+                <span>Applying audio mode...</span>
+            </div>
+        </div>
+
+        <!-- Audio Tabs Section -->
+        <div class="tabs-section">
+            <div class="section-header">
+                <label class="section-title">Audio Tabs (<span id="tabs-count">0</span>)</label>
+                <div class="applying-indicator" id="applying-indicator" style="display: none;">
+                    <div class="spinner-small"></div>
+                    <span>Applying...</span>
+                </div>
+            </div>
+
+            <div id="no-tabs" class="no-tabs">
+                <p>🔇 No audio tabs detected</p>
+                <p class="hint">Play audio in any tab to control its volume</p>
+            </div>
+
+            <div id="tabs-list" class="tabs-list" style="display: none;">
+                <!-- Tabs will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html> 
