@@ -1,0 +1,118 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "600% வரை ஒலி அதிகரிப்பு - மிக எளிமையான மற்றும் நம்பகமான ஒலி பெருக்கி",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "ஒலி தாவல்கள் ஏற்றப்படுகிறது...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "ஒலி தாவல்களை புதுப்பிக்கவும்",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "இருள் பயன்முறையை மாற்று",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "ஒலி மேம்பாடு",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "இயல்புநிலை",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "குரல்",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "பேஸ்",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "ஒலி பயன்முறை பயன்படுத்தப்படுகிறது...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "ஒலி தாவல்கள்",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "பயன்படுத்தப்படுகிறது...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 ஒலி தாவல்கள் கண்டறியப்படவில்லை",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "ஒலியளவை கட்டுப்படுத்த எந்த தாவலிலும் ஒலியை இயக்கவும்",
+    "description": "Hint message for no audio tabs"
+  },
+  "untitled": {
+    "message": "தலைப்பிடப்படாதது",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "ஒலியளவை புதுப்பிக்க முடியவில்லை",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "உள்ளடக்க ஸ்கிரிப்டை ஏற்ற முடியவில்லை",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "தாவலை மாற்ற முடியவில்லை",
+    "description": "Error when switching tab fails"
+  },
+  "quickSwitcher": {
+    "message": "விரைவு மாற்றி",
+    "description": "Title for quick audio tab switcher"
+  },
+  "switchToNext": {
+    "message": "அடுத்த ஒலி தாவல்",
+    "description": "Switch to next audio tab button"
+  },
+  "switchToPrev": {
+    "message": "முந்தைய ஒலி தாவல்",
+    "description": "Switch to previous audio tab button"
+  },
+  "muteAll": {
+    "message": "அனைத்தையும் அமைதியாக்கு",
+    "description": "Mute all audio tabs button"
+  },
+  "muteTab": {
+    "message": "தாவலை அமைதியாக்கு",
+    "description": "Tooltip for mute tab button"
+  },
+  "unmuteTab": {
+    "message": "தாவலின் ஒலியை இயக்கு",
+    "description": "Tooltip for unmute tab button"
+  }
+}
