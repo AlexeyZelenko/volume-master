@@ -1,0 +1,204 @@
+{
+  "appName": {
+    "message": "Үн Чебери",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "600% чейин үн күчөтүү - Эң жөнөкөй жана ишенимдүү үн күчөткүч",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Аудио өтмөктөр жүктөлүүдө...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Аудио өтмөктөрдү жаңыртуу",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Караңгы режимди которуу",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Үн жакшыртуу",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Демейки",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Үн",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Бас",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Үн режими колдонулууда...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "Аудио өтмөктөр",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "Колдонулууда...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 Аудио өтмөктөр табылган жок",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "Үн деңгээлин башкаруу үчүн каалаган өтмөктө аудио ойнотуңуз",
+    "description": "Hint message for no audio tabs"
+  },
+  "errorPrefix": {
+    "message": "⚠️",
+    "description": "Error message prefix"
+  },
+  "errorLoadingSettings": {
+    "message": "Жөндөөлөрдү жүктөө ишке ашкан жок",
+    "description": "Error when loading settings fails"
+  },
+  "errorSavingSettings": {
+    "message": "Жөндөөлөрдү сактоо ишке ашкан жок",
+    "description": "Error when saving settings fails"
+  },
+  "errorGettingTabs": {
+    "message": "Аудио өтмөктөрдү алуу ишке ашкан жок",
+    "description": "Error when getting audio tabs fails"
+  },
+  "switchedToTab": {
+    "message": "✅ Өтмөккө которулду: $TITLE$",
+    "description": "Success message when switching tabs",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "YouTube"
+      }
+    }
+  },
+  "untitled": {
+    "message": "Аталышы жок",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "Үн деңгээлин жаңыртуу ишке ашкан жок",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "Мазмун скриптин жүктөө ишке ашкан жок",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "Өтмөктү которуу ишке ашкан жок",
+    "description": "Error when switching tab fails"
+  },
+  "errorSwitchWindow": {
+    "message": "Терезени которуу ишке ашкан жок",
+    "description": "Error when switching window fails"
+  },
+  "errorRefreshTabs": {
+    "message": "Өтмөктөрдү жаңыртуу ишке ашкан жок",
+    "description": "Error when refreshing tabs fails"
+  },
+  "quickSwitcher": {
+    "message": "Тез которгуч",
+    "description": "Title for quick audio tab switcher"
+  },
+  "switchToNext": {
+    "message": "Кийинки аудио өтмөк",
+    "description": "Switch to next audio tab button"
+  },
+  "switchToPrev": {
+    "message": "Мурунку аудио өтмөк",
+    "description": "Switch to previous audio tab button"
+  },
+  "muteAll": {
+    "message": "Баарын өчүрүү",
+    "description": "Mute all audio tabs button"
+  },
+  "noNextTab": {
+    "message": "Кийинки аудио өтмөк жок",
+    "description": "Message when there's no next audio tab"
+  },
+  "noPrevTab": {
+    "message": "Мурунку аудио өтмөк жок",
+    "description": "Message when there's no previous audio tab"
+  },
+  "allTabsMuted": {
+    "message": "Бардык аудио өтмөктөр өчүрүлдү",
+    "description": "Message when all tabs are muted"
+  },
+  "allTabsUnmuted": {
+    "message": "Бардык аудио өтмөктөр күйгүзүлдү",
+    "description": "Message when all tabs are unmuted"
+  },
+  "muteTab": {
+    "message": "Өтмөктү өчүрүү",
+    "description": "Tooltip for mute tab button"
+  },
+  "unmuteTab": {
+    "message": "Өтмөктү күйгүзүү",
+    "description": "Tooltip for unmute tab button"
+  },
+  "tabMuted": {
+    "message": "Өтмөк өчүрүлдү",
+    "description": "Message when a tab is muted"
+  },
+  "tabUnmuted": {
+    "message": "Өтмөк күйгүзүлдү",
+    "description": "Message when a tab is unmuted"
+  },
+  "errorTogglingMute": {
+    "message": "Үндү которуу катасы",
+    "description": "Error message when mute toggle fails"
+  },
+  "toggleCurrentTab": {
+    "message": "Учурдагы өтмөктүн үнүн которуу",
+    "description": "Description for toggle current tab hotkey"
+  },
+  "switchAndClose": {
+    "message": "Өтмөккө которулуп, калкып чыкма терезени жабуу",
+    "description": "Tooltip for switch and close button"
+  },
+  "keepPopupOpen": {
+    "message": "Өтмөктөрдү которгондо калкып чыкма терезени ачык кармоо",
+    "description": "Tooltip for popup behavior toggle when active"
+  },
+  "allowPopupClose": {
+    "message": "Өтмөктөрдү которгондо калкып чыкма терезенин жабылышына уруксат берүү",
+    "description": "Tooltip for popup behavior toggle when inactive"
+  },
+  "popupWillStayOpen": {
+    "message": "Калкып чыкма терезе ачык калат",
+    "description": "Message when popup behavior is set to stay open"
+  },
+  "popupWillClose": {
+    "message": "Калкып чыкма терезе жабылат",
+    "description": "Message when popup behavior is set to close"
+  }
+}
