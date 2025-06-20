@@ -1,0 +1,118 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Pengganda volum sehingga 600% - Pengganda volum yang paling mudah dan paling dipercayai",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Memuatkan tab audio...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Muat semula tab audio",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Tukar mod gelap",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Peningkatan Audio",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Lalai",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Suara",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Bes",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Menggunakan mod audio...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "Tab Audio",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "Menggunakan...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 Tiada tab audio dikesan",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "Mainkan audio di mana-mana tab untuk mengawal volum",
+    "description": "Hint message for no audio tabs"
+  },
+  "untitled": {
+    "message": "Tanpa tajuk",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "Gagal mengemaskini volum",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "Gagal memuatkan skrip kandungan",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "Gagal menukar tab",
+    "description": "Error when switching tab fails"
+  },
+  "quickSwitcher": {
+    "message": "Penukar Pantas",
+    "description": "Title for quick audio tab switcher"
+  },
+  "switchToNext": {
+    "message": "Tab Audio Seterusnya",
+    "description": "Switch to next audio tab button"
+  },
+  "switchToPrev": {
+    "message": "Tab Audio Sebelumnya",
+    "description": "Switch to previous audio tab button"
+  },
+  "muteAll": {
+    "message": "Senyapkan Semua",
+    "description": "Mute all audio tabs button"
+  },
+  "muteTab": {
+    "message": "Senyapkan tab",
+    "description": "Tooltip for mute tab button"
+  },
+  "unmuteTab": {
+    "message": "Nyahsenyap tab",
+    "description": "Tooltip for unmute tab button"
+  }
+}
