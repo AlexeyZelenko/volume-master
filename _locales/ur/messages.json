@@ -1,0 +1,118 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "600% تک آواز بڑھانے والا - سب سے آسان اور قابل اعتماد آواز بڑھانے والا",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "آڈیو ٹیبز لوڈ ہو رہے ہیں...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "آڈیو ٹیبز ریفریش کریں",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "ڈارک موڈ کو ٹوگل کریں",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "آڈیو بہتری",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "ڈیفالٹ",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "آواز",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "باس",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "آڈیو موڈ لاگو ہو رہا ہے...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "آڈیو ٹیبز",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "لاگو ہو رہا ہے...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 کوئی آڈیو ٹیب نہیں ملی",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "آواز کو کنٹرول کرنے کے لیے کسی بھی ٹیب میں آڈیو چلائیں",
+    "description": "Hint message for no audio tabs"
+  },
+  "untitled": {
+    "message": "بے عنوان",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "آواز اپڈیٹ کرنے میں ناکام",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "مواد اسکرپٹ لوڈ کرنے میں ناکام",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "ٹیب سوئچ کرنے میں ناکام",
+    "description": "Error when switching tab fails"
+  },
+  "quickSwitcher": {
+    "message": "فوری سوئچر",
+    "description": "Title for quick audio tab switcher"
+  },
+  "switchToNext": {
+    "message": "اگلی آڈیو ٹیب",
+    "description": "Switch to next audio tab button"
+  },
+  "switchToPrev": {
+    "message": "پچھلی آڈیو ٹیب",
+    "description": "Switch to previous audio tab button"
+  },
+  "muteAll": {
+    "message": "سب کو خاموش کریں",
+    "description": "Mute all audio tabs button"
+  },
+  "muteTab": {
+    "message": "ٹیب خاموش کریں",
+    "description": "Tooltip for mute tab button"
+  },
+  "unmuteTab": {
+    "message": "ٹیب کی آواز چالو کریں",
+    "description": "Tooltip for unmute tab button"
+  }
+}
