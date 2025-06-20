@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Skaļuma kontrole",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Pilnīga skaļuma kontrole visās cilnēs. Iestatiet skaļumu līdz 600%, saglabājiet noklusējuma skaļumu katēnam domēnam un ātri pārslēdzieties starp tiem.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Uznirstošā loga karstais taustiņš:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Mainīt",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Atiestatīt",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Cilne apklusināta",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Cilne apklusināta (Skaļums: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Cilnes skaņa ieslēgta",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Cilnes skaņa ieslēgta (Skaļums: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Skaļums: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Apklusināt cilni (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Ieslēgt cilnes skaņu (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Atiestatīt skaļumu (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Atvērt iestatījumus",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Saglabāt",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Atiestatīt",
+    "description": "Reset button text."
+  }
+}

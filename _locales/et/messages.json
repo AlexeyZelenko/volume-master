@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Helitugevuse juhtimine",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Täielik helitugevuse juhtimine kõigil vahekaartidel. Seadistage helitugevus kuni 600%, salvestage vaikimisi helitugevus domeenide kaupa ja lülituge kiiresti nende vahel.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Hüpikakna kiirklahv:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Muuda",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Lähtesta",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Vahekaart vaigistatud",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Vahekaart vaigistatud (Helitugevus: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Vahekaardi heli sees",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Vahekaardi heli sees (Helitugevus: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Helitugevus: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Vaigista vahekaart (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Lülita vahekaardi heli sisse (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Lähtesta helitugevus (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Ava seaded",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Salvesta",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Lähtesta",
+    "description": "Reset button text."
+  }
+}
