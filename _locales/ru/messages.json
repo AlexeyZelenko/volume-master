@@ -1,0 +1,184 @@
+{
+  "appName": {
+    "message": "Мастер Громкости",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Усиление звука до 600% - Самый простой и надежный усилитель громкости",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Загрузка аудио вкладок...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Обновить аудио вкладки",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Переключить темную тему",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Улучшение Звука",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Обычный",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Голос",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Басы",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Применение режима звука...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "Аудио Вкладки",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "Применение...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 Аудио вкладки не найдены",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "Воспроизведите аудио в любой вкладке для управления громкостью",
+    "description": "Hint message for no audio tabs"
+  },
+  "errorPrefix": {
+    "message": "⚠️",
+    "description": "Error message prefix"
+  },
+  "errorLoadingSettings": {
+    "message": "Не удалось загрузить настройки",
+    "description": "Error when loading settings fails"
+  },
+  "errorSavingSettings": {
+    "message": "Не удалось сохранить настройки",
+    "description": "Error when saving settings fails"
+  },
+  "errorGettingTabs": {
+    "message": "Не удалось получить аудио вкладки",
+    "description": "Error when getting audio tabs fails"
+  },
+  "switchedToTab": {
+    "message": "✅ Переключено на: $TITLE$",
+    "description": "Success message when switching tabs",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "YouTube"
+      }
+    }
+  },
+  "untitled": {
+    "message": "Без названия",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "Не удалось обновить громкость",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "Не удалось загрузить контент-скрипт",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "Не удалось переключить вкладку",
+    "description": "Error when switching tab fails"
+  },
+  "errorSwitchWindow": {
+    "message": "Не удалось переключить окно",
+    "description": "Error when switching window fails"
+  },
+  "errorRefreshTabs": {
+    "message": "Не удалось обновить вкладки",
+    "description": "Error when refreshing tabs fails"
+  },
+  "quickSwitcher": {
+    "message": "Быстрое переключение",
+    "description": "Title for quick audio tab switcher"
+  },
+  "switchToNext": {
+    "message": "Следующая вкладка",
+    "description": "Switch to next audio tab button"
+  },
+  "switchToPrev": {
+    "message": "Предыдущая вкладка", 
+    "description": "Switch to previous audio tab button"
+  },
+  "muteAll": {
+    "message": "Отключить все",
+    "description": "Mute all audio tabs button"
+  },
+  "noNextTab": {
+    "message": "Нет следующей аудио вкладки",
+    "description": "Message when there's no next audio tab"
+  },
+  "noPrevTab": {
+    "message": "Нет предыдущей аудио вкладки",
+    "description": "Message when there's no previous audio tab"
+  },
+  "allTabsMuted": {
+    "message": "Все аудио вкладки отключены",
+    "description": "Message when all tabs are muted"
+  },
+  "allTabsUnmuted": {
+    "message": "Все аудио вкладки включены", 
+    "description": "Message when all tabs are unmuted"
+  },
+  "muteTab": {
+    "message": "Отключить звук",
+    "description": "Tooltip for mute tab button"
+  },
+  "unmuteTab": {
+    "message": "Включить звук",
+    "description": "Tooltip for unmute tab button"
+  },
+  "tabMuted": {
+    "message": "Звук отключен",
+    "description": "Message when a tab is muted"
+  },
+  "tabUnmuted": {
+    "message": "Звук включен",
+    "description": "Message when a tab is unmuted"
+  },
+  "errorTogglingMute": {
+    "message": "Ошибка переключения звука",
+    "description": "Error message when mute toggle fails"
+  },
+  "toggleCurrentTab": {
+    "message": "Переключить звук текущей вкладки",
+    "description": "Description for toggle current tab hotkey"
+  }
+} 

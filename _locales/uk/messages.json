@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Підсилення гучності до 600% - Найпростіший та найнадійніший підсилювач гучності",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Завантаження аудіо вкладок...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Оновити аудіо вкладки",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Перемкнути темний режим",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Покращення звуку",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "За замовчуванням",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Голос",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Бас",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Застосування аудіо режиму...",
+    "description": "Message when applying audio mode"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "600% तक वॉल्यूम बूस्ट - सबसे सरल और विश्वसनीय वॉल्यूम बूस्टर",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "ऑडियो टैब लोड हो रहे हैं...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "ऑडियो टैब रीफ्रेश करें",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "डार्क मोड टॉगल करें",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "ऑडियो एन्हांसमेंट",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "डिफ़ॉल्ट",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "आवाज़",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "बास",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "ऑडियो मोड लागू हो रहा है...",
+    "description": "Message when applying audio mode"
+  }
+}

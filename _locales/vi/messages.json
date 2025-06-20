@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Tăng âm lượng lên đến 600% - Bộ khuếch đại âm thanh đơn giản và đáng tin cậy nhất",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Đang tải các tab âm thanh...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Làm mới các tab âm thanh",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Chuyển đổi chế độ tối",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Tăng cường âm thanh",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Mặc định",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Giọng nói",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Bass",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Đang áp dụng chế độ âm thanh...",
+    "description": "Message when applying audio mode"
+  }
+}

@@ -21,27 +21,27 @@ Volume Master is a powerful Chrome extension that allows you to completely contr
 ## ✨ Features
 
 ### 🎚️ Volume Control
-- **📊 Precise Control**: Volume slider from 0% to 600%
-- **⚡ Quick Buttons**: Instant volume setting (0%, 50%, 100%, 200%, 400%, 600%)
-- **🎯 Step Adjustment**: +/- buttons for fine-tuning
-- **🔄 Real-time**: Instant application of changes
+- 📊 Precise Control: Volume slider from 0% to 600%
+- ⚡ Quick Buttons: Instant volume setting (0%, 50%, 100%, 200%, 400%, 600%)
+- 🎯 Step Adjustment: +/- buttons for fine-tuning
+- 🔄 Real-time: Instant application of changes
 
 ### 🎵 Audio Modes
-- **🔊 Default**: Standard playback mode
-- **🎤 Voice**: Optimization for voice and speech
-- **🎵 Bass**: Low frequency enhancement for music
+- 🔊 Default: Standard playback mode
+- 🎤 Voice: Optimization for voice and speech
+- 🎵 Bass: Low frequency enhancement for music
 
 ### 🖥️ Interface
-- **🌙 Dark Theme**: Toggle between light and dark themes
-- **📱 Responsive Design**: Beautiful and modern interface
-- **⚡ Fast Performance**: Optimized performance
-- **🔄 Auto-update**: Automatic refresh of audio tabs list
+- 🌙 Dark Theme: Toggle between light and dark themes
+- 📱 Responsive Design: Beautiful and modern interface
+- ⚡ Fast Performance: Optimized performance
+- 🔄 Auto-update: Automatic refresh of audio tabs list
 
 ### 🗂️ Tab Management
-- **📋 Audio Tabs List**: Display of all tabs with active audio
-- **🎯 Quick Switching**: Click to navigate to desired tab
-- **🔊 Audio Status**: Audio state indicators for each tab
-- **🔄 Refresh**: Button to update tabs list
+- 📋 Audio Tabs List: Display of all tabs with active audio
+- 🎯 Quick Switching: Click to navigate to desired tab
+- 🔊 Audio Status: Audio state indicators for each tab
+- 🔄 Refresh: Button to update tabs list
 
 ## 📥 Installation
 

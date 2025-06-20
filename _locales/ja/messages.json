@@ -1,0 +1,128 @@
+{
+  "appName": {
+    "message": "ボリュームマスター",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "最大600%の音量ブースト - 最もシンプルで信頼性の高い音量ブースター",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "オーディオタブを読み込み中...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "オーディオタブを更新",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "ダークモードを切り替え",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "オーディオ強化",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "デフォルト",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "音声",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "ベース",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "オーディオモードを適用中...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "オーディオタブ",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "適用中...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 オーディオタブが検出されませんでした",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "任意のタブで音声を再生して、その音量を制御してください",
+    "description": "Hint message for no audio tabs"
+  },
+  "errorPrefix": {
+    "message": "⚠️",
+    "description": "Error message prefix"
+  },
+  "errorLoadingSettings": {
+    "message": "設定の読み込みに失敗しました",
+    "description": "Error when loading settings fails"
+  },
+  "errorSavingSettings": {
+    "message": "設定の保存に失敗しました",
+    "description": "Error when saving settings fails"
+  },
+  "errorGettingTabs": {
+    "message": "オーディオタブの取得に失敗しました",
+    "description": "Error when getting audio tabs fails"
+  },
+  "switchedToTab": {
+    "message": "✅ 切り替え先: $TITLE$",
+    "description": "Success message when switching tabs",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "YouTube"
+      }
+    }
+  },
+  "untitled": {
+    "message": "無題",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "音量の更新に失敗しました",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "コンテンツスクリプトの読み込みに失敗しました",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "タブの切り替えに失敗しました",
+    "description": "Error when switching tab fails"
+  },
+  "errorSwitchWindow": {
+    "message": "ウィンドウの切り替えに失敗しました",
+    "description": "Error when switching window fails"
+  },
+  "errorRefreshTabs": {
+    "message": "タブの更新に失敗しました",
+    "description": "Error when refreshing tabs fails"
+  }
+} 

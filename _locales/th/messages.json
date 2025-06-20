@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "เพิ่มเสียงได้ถึง 600% - ตัวเพิ่มเสียงที่ง่ายและเชื่อถือได้ที่สุด",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "กำลังโหลดแท็บเสียง...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "รีเฟรชแท็บเสียง",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "สลับโหมดมืด",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "การเพิ่มประสิทธิภาพเสียง",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "ค่าเริ่มต้น",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "เสียงพูด",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "เบส",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "กำลังใช้โหมดเสียง...",
+    "description": "Message when applying audio mode"
+  }
+}

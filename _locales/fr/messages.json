@@ -1,0 +1,128 @@
+{
+  "appName": {
+    "message": "Maître du Volume",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Amplification jusqu'à 600% - L'amplificateur de volume le plus simple et fiable",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Chargement des onglets audio...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Actualiser les onglets audio",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Basculer le mode sombre",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Amélioration Audio",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Par défaut",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Voix",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Basses",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Application du mode audio...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "Onglets Audio",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "Application...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 Aucun onglet audio détecté",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "Lisez de l'audio dans n'importe quel onglet pour contrôler son volume",
+    "description": "Hint message for no audio tabs"
+  },
+  "errorPrefix": {
+    "message": "⚠️",
+    "description": "Error message prefix"
+  },
+  "errorLoadingSettings": {
+    "message": "Échec du chargement des paramètres",
+    "description": "Error when loading settings fails"
+  },
+  "errorSavingSettings": {
+    "message": "Échec de la sauvegarde des paramètres",
+    "description": "Error when saving settings fails"
+  },
+  "errorGettingTabs": {
+    "message": "Échec de l'obtention des onglets audio",
+    "description": "Error when getting audio tabs fails"
+  },
+  "switchedToTab": {
+    "message": "✅ Basculé vers: $TITLE$",
+    "description": "Success message when switching tabs",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "YouTube"
+      }
+    }
+  },
+  "untitled": {
+    "message": "Sans titre",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "Échec de la mise à jour du volume",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "Échec du chargement du script de contenu",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "Échec du changement d'onglet",
+    "description": "Error when switching tab fails"
+  },
+  "errorSwitchWindow": {
+    "message": "Échec du changement de fenêtre",
+    "description": "Error when switching window fails"
+  },
+  "errorRefreshTabs": {
+    "message": "Échec de l'actualisation des onglets",
+    "description": "Error when refreshing tabs fails"
+  }
+} 

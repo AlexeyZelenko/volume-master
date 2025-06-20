@@ -1,5 +1,41 @@
 // Volume Master Popup Script - Vanilla JavaScript
 
+// Internationalization helper function
+function initializeI18n() {
+    // Initialize all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const messageKey = element.getAttribute('data-i18n');
+        const message = chrome.i18n.getMessage(messageKey);
+        if (message) {
+            element.textContent = message;
+        }
+    });
+
+    // Initialize all elements with data-i18n-title attribute (for tooltips)
+    document.querySelectorAll('[data-i18n-title]').forEach(element => {
+        const messageKey = element.getAttribute('data-i18n-title');
+        const message = chrome.i18n.getMessage(messageKey);
+        if (message) {
+            element.title = message;
+        }
+    });
+
+    // Update document title
+    const titleElement = document.querySelector('title[data-i18n]');
+    if (titleElement) {
+        const messageKey = titleElement.getAttribute('data-i18n');
+        const message = chrome.i18n.getMessage(messageKey);
+        if (message) {
+            document.title = message;
+        }
+    }
+}
+
+// Helper function to get localized message
+function getMessage(key, substitutions = []) {
+    return chrome.i18n.getMessage(key, substitutions) || key;
+}
+
 class VolumePopup {
     constructor() {
         this.volume = 100;
@@ -13,11 +49,15 @@ class VolumePopup {
         this.saveTimeout = null; // For debouncing saves
         this.updateTimeout = null; // For debouncing volume updates
         this.modeTimeout = null; // For debouncing mode changes
+        this.currentAudioTabIndex = 0; // For quick switcher
         
         this.init();
     }
 
     async init() {
+        // Initialize internationalization first
+        initializeI18n();
+        
         await this.loadSettings();
         await this.getAudioTabs();
         await this.getCurrentTab();
@@ -84,6 +124,15 @@ class VolumePopup {
         // Error close button
         const errorClose = document.getElementById('error-close');
         if (errorClose) errorClose.addEventListener('click', () => this.clearError());
+
+        // Quick switcher controls
+        const prevTabBtn = document.getElementById('prev-audio-tab');
+        const nextTabBtn = document.getElementById('next-audio-tab');
+        const muteAllBtn = document.getElementById('mute-all-tabs');
+        
+        if (prevTabBtn) prevTabBtn.addEventListener('click', () => this.switchToPrevAudioTab());
+        if (nextTabBtn) nextTabBtn.addEventListener('click', () => this.switchToNextAudioTab());
+        if (muteAllBtn) muteAllBtn.addEventListener('click', () => this.toggleMuteAllTabs());
     }
 
     setupMessageListener() {
@@ -109,7 +158,7 @@ class VolumePopup {
             }
         } catch (error) {
             console.error('Error loading settings:', error);
-            this.showError('Failed to load settings');
+            this.showError(getMessage('errorLoadingSettings'));
         }
     }
 
@@ -131,6 +180,7 @@ class VolumePopup {
                 // Обновляем значок на иконке расширения
                 await this.updateExtensionBadge();
                 
+                // Локализация не требуется для консольных сообщений разработчика
                 console.log('Volume Master: Settings saved successfully');
             } catch (error) {
                 console.error('Error saving settings:', error);
@@ -138,7 +188,7 @@ class VolumePopup {
                     console.warn('Chrome Storage quota reached, retrying in 10 seconds...');
                     setTimeout(() => this.saveSettings(), 10000);
                 } else {
-                    this.showError('Failed to save settings');
+                    this.showError(getMessage('errorSavingSettings'));
                 }
             }
         }, 500); // Wait 500ms before saving
@@ -172,7 +222,7 @@ class VolumePopup {
             this.updateTabsList();
         } catch (error) {
             console.error('Error getting audio tabs:', error);
-            this.showError('Failed to get audio tabs');
+            this.showError(getMessage('errorGettingTabs'));
             
             try {
                 const tabs = await chrome.tabs.query({});
@@ -217,7 +267,7 @@ class VolumePopup {
             this.updateUI();
         } catch (error) {
             console.error('Error updating volume:', error);
-            this.showError('Failed to update volume');
+            this.showError(getMessage('errorUpdateVolume'));
         } finally {
             this.showApplying(false);
         }
@@ -298,7 +348,7 @@ class VolumePopup {
             }
 
             console.error(`Volume Master: Content script failed to respond after injection in tab ${tabId}`);
-            return { success: false, error: 'Failed to load content script' };
+            return { success: false, error: getMessage('errorLoadContentScript') };
         } catch (error) {
             console.error('Error ensuring content script loaded:', error);
             return { success: false, error: error.message };
@@ -333,7 +383,7 @@ class VolumePopup {
             
         } catch (error) {
             console.error('Error switching to tab:', error);
-            this.showError('Failed to switch tab');
+            this.showError(getMessage('errorSwitchTab'));
         } finally {
             this.showApplying(false);
         }
@@ -351,14 +401,14 @@ class VolumePopup {
             
         } catch (error) {
             console.error('Error switching to tab window:', error);
-            this.showError('Failed to switch window');
+            this.showError(getMessage('errorSwitchWindow'));
         }
     }
 
     showTabSwitchSuccess(tabTitle) {
         // Показываем успешное переключение в консоли
         const shortTitle = this.formatTabTitle(tabTitle);
-        console.log(`✅ Switched to: ${shortTitle}`);
+        console.log(getMessage('switchedToTab', [shortTitle]));
     }
 
     async refreshAudioTabs() {
@@ -377,7 +427,7 @@ class VolumePopup {
             }
         } catch (error) {
             console.error('Error refreshing audio tabs:', error);
-            this.showError('Failed to refresh tabs');
+            this.showError(getMessage('errorRefreshTabs'));
             await this.getAudioTabs();
         } finally {
             this.hideLoading();
@@ -436,13 +486,31 @@ class VolumePopup {
                 // Add event listeners to tab items
                 const tabItems = tabsList.querySelectorAll('.tab-item');
                 tabItems.forEach(item => {
-                    item.addEventListener('click', () => {
+                    item.addEventListener('click', (e) => {
+                        // Don't switch tab if clicking on mute button
+                        if (e.target.classList.contains('tab-mute-btn')) {
+                            return;
+                        }
                         const tabId = parseInt(item.dataset.tabId);
                         this.switchToTab(tabId);
                     });
                 });
+
+                // Add event listeners to mute buttons
+                const muteButtons = tabsList.querySelectorAll('.tab-mute-btn');
+                muteButtons.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent tab switching
+                        const tabId = parseInt(btn.dataset.tabId);
+                        const isMuted = btn.dataset.muted === 'true';
+                        this.toggleTabMute(tabId, !isMuted);
+                    });
+                });
             }
         }
+        
+        // Update quick switcher buttons
+        this.updateQuickSwitcherButtons();
     }
 
     renderTabsList() {
@@ -459,7 +527,13 @@ class VolumePopup {
                     <div class="tab-title">${this.formatTabTitle(tab.title)}</div>
                     <div class="tab-url">${new URL(tab.url).hostname}</div>
                 </div>
-                <div class="tab-status">
+                <div class="tab-controls">
+                    <button class="tab-mute-btn" 
+                            data-tab-id="${tab.id}" 
+                            data-muted="${tab.mutedInfo?.muted || false}"
+                            title="${tab.mutedInfo?.muted ? getMessage('unmuteTab') : getMessage('muteTab')}">
+                        ${tab.mutedInfo?.muted ? '🔊' : '🔇'}
+                    </button>
                     <span class="tab-icon">${this.getTabIcon(tab)}</span>
                 </div>
             </div>
@@ -507,7 +581,7 @@ class VolumePopup {
         const errorBanner = document.getElementById('error-banner');
         const errorText = document.getElementById('error-text');
         if (errorBanner && errorText) {
-            errorText.textContent = `⚠️ ${message}`;
+            errorText.textContent = `${getMessage('errorPrefix')} ${message}`;
             errorBanner.style.display = 'flex';
         }
         this.error = message;
@@ -550,7 +624,7 @@ class VolumePopup {
     }
 
     formatTabTitle(title) {
-        return title && title.length > 30 ? title.substring(0, 30) + '...' : title || 'Untitled';
+        return title && title.length > 30 ? title.substring(0, 30) + '...' : title || getMessage('untitled');
     }
 
     toggleDarkMode() {
@@ -624,6 +698,208 @@ class VolumePopup {
         if (modeApplyingIndicator) {
             modeApplyingIndicator.style.display = show ? 'flex' : 'none';
         }
+    }
+
+    // Quick Switcher Methods
+    switchToNextAudioTab() {
+        if (this.audioTabs.length === 0) {
+            this.showToast(getMessage('noNextTab'));
+            return;
+        }
+
+        this.currentAudioTabIndex = (this.currentAudioTabIndex + 1) % this.audioTabs.length;
+        const nextTab = this.audioTabs[this.currentAudioTabIndex];
+        
+        this.switchToTabWithAnimation(nextTab);
+        this.updateCurrentTabInfo(nextTab);
+    }
+
+    switchToPrevAudioTab() {
+        if (this.audioTabs.length === 0) {
+            this.showToast(getMessage('noPrevTab'));
+            return;
+        }
+
+        this.currentAudioTabIndex = this.currentAudioTabIndex === 0 
+            ? this.audioTabs.length - 1 
+            : this.currentAudioTabIndex - 1;
+        const prevTab = this.audioTabs[this.currentAudioTabIndex];
+        
+        this.switchToTabWithAnimation(prevTab);
+        this.updateCurrentTabInfo(prevTab);
+    }
+
+    async toggleMuteAllTabs() {
+        if (this.audioTabs.length === 0) return;
+
+        const btn = document.getElementById('mute-all-tabs');
+        if (btn) btn.classList.add('switching');
+
+        try {
+            const allMuted = this.audioTabs.every(tab => tab.mutedInfo && tab.mutedInfo.muted);
+            
+            // Toggle mute state for all audio tabs
+            const promises = this.audioTabs.map(tab => 
+                chrome.tabs.update(tab.id, { muted: !allMuted })
+            );
+            
+            await Promise.all(promises);
+            
+            // Update local state
+            this.audioTabs.forEach(tab => {
+                if (tab.mutedInfo) {
+                    tab.mutedInfo.muted = !allMuted;
+                }
+            });
+
+            // Show feedback message
+            const message = allMuted ? getMessage('allTabsUnmuted') : getMessage('allTabsMuted');
+            this.showToast(message);
+            
+            // Update UI
+            this.updateTabsList();
+            this.updateQuickSwitcherButtons();
+            
+        } catch (error) {
+            console.error('Error toggling mute all tabs:', error);
+            this.showToast('Error toggling mute');
+        } finally {
+            setTimeout(() => {
+                if (btn) btn.classList.remove('switching');
+            }, 300);
+        }
+    }
+
+    async switchToTabWithAnimation(tab) {
+        const nextBtn = document.getElementById('next-audio-tab');
+        const prevBtn = document.getElementById('prev-audio-tab');
+        
+        // Add animation classes
+        if (nextBtn) nextBtn.classList.add('switching');
+        if (prevBtn) prevBtn.classList.add('switching');
+
+        try {
+            await this.switchToTab(tab.id);
+        } catch (error) {
+            console.error('Error switching to tab:', error);
+        } finally {
+            // Remove animation classes
+            setTimeout(() => {
+                if (nextBtn) nextBtn.classList.remove('switching');
+                if (prevBtn) prevBtn.classList.remove('switching');
+            }, 300);
+        }
+    }
+
+    updateCurrentTabInfo(tab) {
+        const currentTabInfo = document.getElementById('current-audio-tab');
+        const favicon = currentTabInfo?.querySelector('.current-tab-favicon');
+        const title = currentTabInfo?.querySelector('.current-tab-title');
+        
+        if (currentTabInfo && favicon && title) {
+            currentTabInfo.style.display = 'flex';
+            currentTabInfo.classList.add('switching');
+            
+            // Update favicon
+            if (tab.favIconUrl) {
+                favicon.innerHTML = `<img src="${tab.favIconUrl}" alt="${tab.title}">`;
+            } else {
+                favicon.innerHTML = '🌐';
+            }
+            
+            // Update title
+            title.textContent = this.formatTabTitle(tab.title);
+            
+            // Add active class briefly
+            setTimeout(() => {
+                currentTabInfo.classList.add('active');
+                currentTabInfo.classList.remove('switching');
+            }, 100);
+            
+            // Remove active class after 2 seconds
+            setTimeout(() => {
+                currentTabInfo.classList.remove('active');
+            }, 2000);
+        }
+    }
+
+    updateQuickSwitcherButtons() {
+        const prevBtn = document.getElementById('prev-audio-tab');
+        const nextBtn = document.getElementById('next-audio-tab');
+        const muteAllBtn = document.getElementById('mute-all-tabs');
+        
+        const hasAudioTabs = this.audioTabs.length > 0;
+        
+        if (prevBtn) prevBtn.disabled = !hasAudioTabs;
+        if (nextBtn) nextBtn.disabled = !hasAudioTabs;
+        if (muteAllBtn) muteAllBtn.disabled = !hasAudioTabs;
+        
+        // Update mute all button icon based on current state
+        if (muteAllBtn && hasAudioTabs) {
+            const allMuted = this.audioTabs.every(tab => tab.mutedInfo && tab.mutedInfo.muted);
+            muteAllBtn.innerHTML = allMuted ? '🔊' : '🔇';
+            muteAllBtn.title = allMuted ? getMessage('allTabsUnmuted') : getMessage('allTabsMuted');
+        }
+    }
+
+    async toggleTabMute(tabId, shouldMute) {
+        try {
+            // Update tab mute state
+            await chrome.tabs.update(tabId, { muted: shouldMute });
+            
+            // Update local state
+            const tab = this.audioTabs.find(t => t.id === tabId);
+            if (tab) {
+                if (!tab.mutedInfo) tab.mutedInfo = {};
+                tab.mutedInfo.muted = shouldMute;
+            }
+            
+            // Show feedback
+            const action = shouldMute ? getMessage('tabMuted') : getMessage('tabUnmuted');
+            const tabTitle = tab ? this.formatTabTitle(tab.title) : `Tab ${tabId}`;
+            this.showToast(`${action}: ${tabTitle}`);
+            
+            // Update UI
+            this.updateTabsList();
+            this.updateQuickSwitcherButtons();
+            
+        } catch (error) {
+            console.error('Error toggling tab mute:', error);
+            this.showToast(getMessage('errorTogglingMute'));
+        }
+    }
+
+    showToast(message) {
+        // Create toast notification
+        const toast = document.createElement('div');
+        toast.className = 'toast-notification';
+        toast.textContent = message;
+        toast.style.cssText = `
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            z-index: 1000;
+            animation: toastSlideIn 0.3s ease-out;
+        `;
+        
+        document.body.appendChild(toast);
+        
+        // Remove toast after 2 seconds
+        setTimeout(() => {
+            toast.style.animation = 'toastSlideOut 0.3s ease-in';
+            setTimeout(() => {
+                if (toast.parentNode) {
+                    toast.parentNode.removeChild(toast);
+                }
+            }, 300);
+        }, 2000);
     }
 }
 

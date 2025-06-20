@@ -1,0 +1,128 @@
+{
+  "appName": {
+    "message": "音量大师",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "高达600%音量增强 - 最简单可靠的音量增强器",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "正在加载音频标签...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "刷新音频标签",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "切换暗色模式",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "音频增强",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "默认",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "人声",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "低音",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "正在应用音频模式...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "音频标签",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "正在应用...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 未检测到音频标签",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "在任意标签页播放音频以控制其音量",
+    "description": "Hint message for no audio tabs"
+  },
+  "errorPrefix": {
+    "message": "⚠️",
+    "description": "Error message prefix"
+  },
+  "errorLoadingSettings": {
+    "message": "加载设置失败",
+    "description": "Error when loading settings fails"
+  },
+  "errorSavingSettings": {
+    "message": "保存设置失败",
+    "description": "Error when saving settings fails"
+  },
+  "errorGettingTabs": {
+    "message": "获取音频标签失败",
+    "description": "Error when getting audio tabs fails"
+  },
+  "switchedToTab": {
+    "message": "✅ 已切换到: $TITLE$",
+    "description": "Success message when switching tabs",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "YouTube"
+      }
+    }
+  },
+  "untitled": {
+    "message": "无标题",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "更新音量失败",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "加载内容脚本失败",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "切换标签失败",
+    "description": "Error when switching tab fails"
+  },
+  "errorSwitchWindow": {
+    "message": "切换窗口失败",
+    "description": "Error when switching window fails"
+  },
+  "errorRefreshTabs": {
+    "message": "刷新标签失败",
+    "description": "Error when refreshing tabs fails"
+  }
+} 

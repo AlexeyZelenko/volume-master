@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "تعزيز الصوت حتى 600٪ - أبسط وأكثر معزز صوت موثوق به",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "جارٍ تحميل علامات التبويب الصوتية...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "تحديث علامات التبويب الصوتية",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "تبديل الوضع المظلم",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "تحسين الصوت",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "افتراضي",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "صوت",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "باس",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "جارٍ تطبيق وضع الصوت...",
+    "description": "Message when applying audio mode"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "appName": {
+    "message": "Maestro del Volume",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Fino al 600% di amplificazione del volume - L'amplificatore di volume più semplice e affidabile",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Caricamento schede audio...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Aggiorna schede audio",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Attiva/disattiva modalità scura",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Miglioramento Audio",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Predefinito",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Voce",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Bassi",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Applicazione modalità audio...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "Schede Audio",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "Applicazione...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 Nessuna scheda audio rilevata",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "Riproduci audio in qualsiasi scheda per controllarne il volume",
+    "description": "Hint message for no audio tabs"
+  },
+  "errorPrefix": {
+    "message": "⚠️",
+    "description": "Error message prefix"
+  },
+  "errorLoadingSettings": {
+    "message": "Impossibile caricare le impostazioni",
+    "description": "Error when loading settings fails"
+  },
+  "errorSavingSettings": {
+    "message": "Impossibile salvare le impostazioni",
+    "description": "Error when saving settings fails"
+  },
+  "errorGettingTabs": {
+    "message": "Impossibile ottenere le schede audio",
+    "description": "Error when getting audio tabs fails"
+  },
+  "switchedToTab": {
+    "message": "✅ Passato a: $TITLE$",
+    "description": "Success message when switching tabs",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "YouTube"
+      }
+    }
+  },
+  "untitled": {
+    "message": "Senza titolo",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "Impossibile aggiornare il volume",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "Impossibile caricare lo script del contenuto",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "Impossibile cambiare scheda",
+    "description": "Error when switching tab fails"
+  },
+  "errorSwitchWindow": {
+    "message": "Impossibile cambiare finestra",
+    "description": "Error when switching window fails"
+  },
+  "errorRefreshTabs": {
+    "message": "Impossibile aggiornare le schede",
+    "description": "Error when refreshing tabs fails"
+  }
+} 

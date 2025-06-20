@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Tingkatkan volume hingga 600% - Penguat volume paling sederhana dan paling andal",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Memuat tab audio...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Segarkan tab audio",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Aktifkan mode gelap",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Peningkatan Audio",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Default",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Suara",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Bass",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Menerapkan mode audio...",
+    "description": "Message when applying audio mode"
+  }
+}

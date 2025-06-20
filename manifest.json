@@ -1,13 +1,33 @@
 {
   "manifest_version": 3,
-  "name": "Volume Master",
-  "version": "1.0.0",
-  "description": "Up to 600% volume boost - The simplest and most reliable volume booster",
+  "name": "__MSG_appName__",
+  "version": "1.0.4",
+  "description": "__MSG_appDescription__",
+  "default_locale": "en",
+  "commands": {
+    "next-audio-tab": {
+      "suggested_key": { "default": "Ctrl+Shift+Right" },
+      "description": "Switch to next audio tab"
+    },
+    "prev-audio-tab": {
+      "suggested_key": { "default": "Ctrl+Shift+Left" },
+      "description": "Switch to previous audio tab"
+    },
+    "toggle-mute-all": {
+      "suggested_key": { "default": "Ctrl+Shift+M" },
+      "description": "Toggle mute all audio tabs"
+    },
+    "toggle-current-tab": {
+      "suggested_key": { "default": "Ctrl+Shift+X" },
+      "description": "Toggle mute current tab"
+    }
+  },
   "permissions": [
     "activeTab",
     "tabs",
     "storage",
-    "scripting"
+    "scripting",
+    "notifications"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -24,7 +44,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Volume Master",
+    "default_title": "__MSG_appName__",
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",

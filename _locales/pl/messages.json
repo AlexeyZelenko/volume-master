@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Zwiększenie głośności do 600% - Najprostszy i najbardziej niezawodny wzmacniacz głośności",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Ładowanie kart audio...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Odśwież karty audio",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Przełącz tryb ciemny",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Wzmocnienie dźwięku",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Domyślny",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Głos",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Bas",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Stosowanie trybu audio...",
+    "description": "Message when applying audio mode"
+  }
+}

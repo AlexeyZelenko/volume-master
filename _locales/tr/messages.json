@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "%600'e kadar ses artırma - En basit ve en güvenilir ses yükseltici",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Ses sekmeleri yükleniyor...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Ses sekmelerini yenile",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Karanlık modu değiştir",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Ses İyileştirme",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Varsayılan",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Ses",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Bas",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Ses modu uygulanıyor...",
+    "description": "Message when applying audio mode"
+  }
+}

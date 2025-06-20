@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "최대 600% 볼륨 증폭 - 가장 간단하고 안정적인 볼륨 부스터",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "오디오 탭 로딩 중...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "오디오 탭 새로고침",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "다크 모드 전환",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "오디오 향상",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "기본",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "음성",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "베이스",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "오디오 모드 적용 중...",
+    "description": "Message when applying audio mode"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "appName": {
+    "message": "Lautstärke-Meister",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Bis zu 600% Lautstärkeverstärkung - Der einfachste und zuverlässigste Lautstärkeverstärker",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Audio-Tabs werden geladen...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Audio-Tabs aktualisieren",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Dunklen Modus umschalten",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Audio-Verbesserung",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Standard",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Stimme",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Bass",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Audio-Modus wird angewendet...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "Audio-Tabs",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "Wird angewendet...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 Keine Audio-Tabs erkannt",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "Spielen Sie Audio in einem beliebigen Tab ab, um dessen Lautstärke zu kontrollieren",
+    "description": "Hint message for no audio tabs"
+  },
+  "errorPrefix": {
+    "message": "⚠️",
+    "description": "Error message prefix"
+  },
+  "errorLoadingSettings": {
+    "message": "Einstellungen konnten nicht geladen werden",
+    "description": "Error when loading settings fails"
+  },
+  "errorSavingSettings": {
+    "message": "Einstellungen konnten nicht gespeichert werden",
+    "description": "Error when saving settings fails"
+  },
+  "errorGettingTabs": {
+    "message": "Audio-Tabs konnten nicht abgerufen werden",
+    "description": "Error when getting audio tabs fails"
+  },
+  "switchedToTab": {
+    "message": "✅ Gewechselt zu: $TITLE$",
+    "description": "Success message when switching tabs",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "YouTube"
+      }
+    }
+  },
+  "untitled": {
+    "message": "Ohne Titel",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "Lautstärke konnte nicht aktualisiert werden",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "Content-Script konnte nicht geladen werden",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "Tab konnte nicht gewechselt werden",
+    "description": "Error when switching tab fails"
+  },
+  "errorSwitchWindow": {
+    "message": "Fenster konnte nicht gewechselt werden",
+    "description": "Error when switching window fails"
+  },
+  "errorRefreshTabs": {
+    "message": "Tabs konnten nicht aktualisiert werden",
+    "description": "Error when refreshing tabs fails"
+  }
+} 

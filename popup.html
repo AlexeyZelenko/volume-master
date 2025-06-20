@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volume Master</title>
+    <title data-i18n="appName">Volume Master</title>
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
     <!-- Loading State -->
     <div id="loading" class="loading">
         <div class="spinner"></div>
-        <p>Loading audio tabs...</p>
+        <p data-i18n="loading">Loading audio tabs...</p>
     </div>
 
     <!-- Error State -->
@@ -25,13 +25,13 @@
         <div class="header">
             <div class="logo">
                 <span class="icon">🔊</span>
-                <h1>Volume Master</h1>
+                <h1 data-i18n="appName">Volume Master</h1>
             </div>
             <div class="header-controls">
-                <button id="refresh-btn" class="refresh-btn" title="Refresh audio tabs">
+                <button id="refresh-btn" class="refresh-btn" data-i18n-title="refreshTabs" title="Refresh audio tabs">
                     🔄
                 </button>
-                <button id="theme-toggle" class="theme-toggle" title="Toggle dark mode">
+                <button id="theme-toggle" class="theme-toggle" data-i18n-title="toggleDarkMode" title="Toggle dark mode">
                     🌙
                 </button>
             </div>
@@ -76,7 +76,7 @@
 
         <!-- Audio Mode Section -->
         <div class="audio-mode-section">
-            <label class="section-title">Audio Enhancement</label>
+            <label class="section-title" data-i18n="audioEnhancement">Audio Enhancement</label>
             <div class="audio-modes">
                 <button 
                     data-mode="default"
@@ -84,7 +84,7 @@
                     id="mode-default"
                 >
                     <span class="mode-icon">🔊</span>
-                    <span class="mode-label">Default</span>
+                    <span class="mode-label" data-i18n="modeDefault">Default</span>
                 </button>
                 <button 
                     data-mode="voice"
@@ -92,7 +92,7 @@
                     id="mode-voice"
                 >
                     <span class="mode-icon">🎤</span>
-                    <span class="mode-label">Voice</span>
+                    <span class="mode-label" data-i18n="modeVoice">Voice</span>
                 </button>
                 <button 
                     data-mode="bass"
@@ -100,29 +100,53 @@
                     id="mode-bass"
                 >
                     <span class="mode-icon">🎵</span>
-                    <span class="mode-label">Bass</span>
+                    <span class="mode-label" data-i18n="modeBass">Bass</span>
                 </button>
             </div>
             <!-- Mode applying indicator -->
             <div id="mode-applying-indicator" class="applying-indicator">
                 <div class="spinner"></div>
-                <span>Applying audio mode...</span>
+                <span data-i18n="applyingMode">Applying audio mode...</span>
+            </div>
+        </div>
+
+        <!-- Quick Switcher Section -->
+        <div class="quick-switcher-section">
+            <div class="section-header">
+                <label class="section-title" data-i18n="quickSwitcher">Quick Switcher</label>
+            </div>
+            <div class="quick-switcher-controls">
+                <button id="prev-audio-tab" class="switcher-btn" data-i18n-title="switchToPrev" title="Previous Audio Tab">
+                    ⏮️
+                </button>
+                <button id="next-audio-tab" class="switcher-btn" data-i18n-title="switchToNext" title="Next Audio Tab">
+                    ⏭️
+                </button>
+                <button id="mute-all-tabs" class="switcher-btn" data-i18n-title="muteAll" title="Mute All">
+                    🔇
+                </button>
+            </div>
+            <div id="current-audio-tab" class="current-tab-info" style="display: none;">
+                <div class="current-tab-favicon">🌐</div>
+                <div class="current-tab-title">No audio tab</div>
             </div>
         </div>
 
         <!-- Audio Tabs Section -->
         <div class="tabs-section">
             <div class="section-header">
-                <label class="section-title">Audio Tabs (<span id="tabs-count">0</span>)</label>
+                <label class="section-title">
+                    <span data-i18n="audioTabs">Audio Tabs</span> (<span id="tabs-count">0</span>)
+                </label>
                 <div class="applying-indicator" id="applying-indicator" style="display: none;">
                     <div class="spinner-small"></div>
-                    <span>Applying...</span>
+                    <span data-i18n="applying">Applying...</span>
                 </div>
             </div>
 
             <div id="no-tabs" class="no-tabs">
-                <p>🔇 No audio tabs detected</p>
-                <p class="hint">Play audio in any tab to control its volume</p>
+                <p data-i18n="noAudioTabs">🔇 No audio tabs detected</p>
+                <p class="hint" data-i18n="noAudioTabsHint">Play audio in any tab to control its volume</p>
             </div>
 
             <div id="tabs-list" class="tabs-list" style="display: none;">

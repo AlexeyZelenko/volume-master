@@ -193,7 +193,7 @@ class VolumeManagerService {
 
                     tabs.push({
                         id: tab.id,
-                        title: tab.title || 'Untitled',
+                        title: tab.title || chrome.i18n.getMessage('untitled'),
                         url: tab.url,
                         favIconUrl: tab.favIconUrl,
                         audible: tab.audible,
@@ -362,6 +362,143 @@ class VolumeManagerService {
 
 // Инициализация сервиса
 const volumeManager = new VolumeManagerService();
+
+// Handle keyboard shortcuts
+chrome.commands.onCommand.addListener(async (command) => {
+    try {
+        switch (command) {
+            case 'next-audio-tab':
+                await switchToNextAudioTab();
+                break;
+            case 'prev-audio-tab':
+                await switchToPrevAudioTab();
+                break;
+            case 'toggle-mute-all':
+                await toggleMuteAllAudioTabs();
+                break;
+            case 'toggle-current-tab':
+                await toggleCurrentTabMute();
+                break;
+        }
+    } catch (error) {
+        console.error('Error handling command:', command, error);
+    }
+});
+
+// Quick audio tab switching functions
+async function switchToNextAudioTab() {
+    const audioTabs = await volumeManager.getAudioTabsInfo();
+    if (audioTabs.length === 0) return;
+
+    const currentTab = await chrome.tabs.query({ active: true, currentWindow: true });
+    const currentTabId = currentTab[0]?.id;
+    
+    let currentIndex = audioTabs.findIndex(tab => tab.id === currentTabId);
+    if (currentIndex === -1) currentIndex = 0;
+    
+    const nextIndex = (currentIndex + 1) % audioTabs.length;
+    const nextTab = audioTabs[nextIndex];
+    
+    await chrome.tabs.update(nextTab.id, { active: true });
+    await chrome.windows.update(nextTab.windowId, { focused: true });
+    
+    // Show notification
+    try {
+        await chrome.notifications.create({
+            type: 'basic',
+            iconUrl: 'icons/icon48.png',
+            title: chrome.i18n.getMessage('appName'),
+            message: `Switched to: ${nextTab.title}`
+        });
+    } catch (error) {
+        console.log('Notification not supported');
+    }
+}
+
+async function switchToPrevAudioTab() {
+    const audioTabs = await volumeManager.getAudioTabsInfo();
+    if (audioTabs.length === 0) return;
+
+    const currentTab = await chrome.tabs.query({ active: true, currentWindow: true });
+    const currentTabId = currentTab[0]?.id;
+    
+    let currentIndex = audioTabs.findIndex(tab => tab.id === currentTabId);
+    if (currentIndex === -1) currentIndex = 0;
+    
+    const prevIndex = currentIndex === 0 ? audioTabs.length - 1 : currentIndex - 1;
+    const prevTab = audioTabs[prevIndex];
+    
+    await chrome.tabs.update(prevTab.id, { active: true });
+    await chrome.windows.update(prevTab.windowId, { focused: true });
+    
+    // Show notification
+    try {
+        await chrome.notifications.create({
+            type: 'basic',
+            iconUrl: 'icons/icon48.png',
+            title: chrome.i18n.getMessage('appName'),
+            message: `Switched to: ${prevTab.title}`
+        });
+    } catch (error) {
+        console.log('Notification not supported');
+    }
+}
+
+async function toggleMuteAllAudioTabs() {
+    const audioTabs = await volumeManager.getAudioTabsInfo();
+    if (audioTabs.length === 0) return;
+
+    const allMuted = audioTabs.every(tab => tab.muted);
+    
+    const promises = audioTabs.map(tab => 
+        chrome.tabs.update(tab.id, { muted: !allMuted })
+    );
+    
+    await Promise.all(promises);
+    
+    // Show notification
+    try {
+        await chrome.notifications.create({
+            type: 'basic',
+            iconUrl: 'icons/icon48.png',
+            title: chrome.i18n.getMessage('appName'),
+            message: allMuted ? 
+                chrome.i18n.getMessage('allTabsUnmuted') : 
+                chrome.i18n.getMessage('allTabsMuted')
+        });
+    } catch (error) {
+        console.log('Notification not supported');
+    }
+}
+
+async function toggleCurrentTabMute() {
+    try {
+        const currentTab = await chrome.tabs.query({ active: true, currentWindow: true });
+        if (currentTab.length === 0) return;
+
+        const tab = currentTab[0];
+        const isCurrentlyMuted = tab.mutedInfo?.muted || false;
+        
+        // Toggle mute state
+        await chrome.tabs.update(tab.id, { muted: !isCurrentlyMuted });
+        
+        // Show notification
+        try {
+            await chrome.notifications.create({
+                type: 'basic',
+                iconUrl: 'icons/icon48.png',
+                title: chrome.i18n.getMessage('appName'),
+                message: isCurrentlyMuted ? 
+                    `${chrome.i18n.getMessage('tabUnmuted')}: ${tab.title}` : 
+                    `${chrome.i18n.getMessage('tabMuted')}: ${tab.title}`
+            });
+        } catch (error) {
+            console.log('Notification not supported');
+        }
+    } catch (error) {
+        console.error('Error toggling current tab mute:', error);
+    }
+}
 
 // Экспорт для отладки
 self.volumeMaster = volumeManager; 
