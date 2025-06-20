@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Kontrolli i Volumit",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Kontroll i plotë i volumit në të gjitha skedat. Vendosni volumin deri në 600%, ruani volumin e paracaktuar sipas domeneve dhe kaloni shpejt midis tyre.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Shkurtore për dritaren kërcyese:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Ndrysho",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Rivendos",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Skeda pa zë",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Skeda pa zë (Volumi: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Skeda me zë",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Skeda me zë (Volumi: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Volumi: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Heq zërin e skedës (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Aktivizo zërin e skedës (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Rivendos volumin (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Hap cilësimet",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Ruaj",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Rivendos",
+    "description": "Reset button text."
+  }
+}

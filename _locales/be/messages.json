@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Кіраванне гучнасцю",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Поўны кантроль гучнасці на ўсіх укладках. Усталюйце гучнасць да 600%, захоўвайце прадвызначаную гучнасць па даменах і хутка пераключайцеся паміж імі.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Гарачая клавіша для выплыўнага акна:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Змяніць",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Скінуць",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Укладка без гуку",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Укладка без гуку (Гучнасць: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Укладка з гукам",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Укладка з гукам (Гучнасць: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Гучнасць: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Адключыць гук укладкі (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Уключыць гук укладкі (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Скінуць гучнасць (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Адкрыць налады",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Захаваць",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Скінуць",
+    "description": "Reset button text."
+  }
+}

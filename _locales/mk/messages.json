@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Контрола на јачина на звук",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Целосна контрола на јачината на звукот на сите јазичиња. Поставете ја јачината на звукот до 600%, зачувајте ја стандардната јачина на звукот по домени и брзо префрлајте се помеѓу нив.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Кратенка за скокачки прозорец:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Промени",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Ресетирај",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Јазиче без звук",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Јазиче без звук (Јачина: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Јазиче со звук",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Јазиче со звук (Јачина: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Јачина: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Исклучи звук на јазиче (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Вклучи звук на јазиче (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Ресетирај јачина (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Отвори поставки",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Зачувај",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Ресетирај",
+    "description": "Reset button text."
+  }
+}
