@@ -1,0 +1,118 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "600% వరకు శబ్దం పెంపు - అత్యంత సరళమైన మరియు విశ్వసనీయమైన శబ్ద వర్ధకం",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "ఆడియో ట్యాబ్‌లు లోడ్ అవుతున్నాయి...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "ఆడియో ట్యాబ్‌లను రిఫ్రెష్ చేయండి",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "డార్క్ మోడ్‌ను టోగుల్ చేయండి",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "ఆడియో మెరుగుదల",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "డిఫాల్ట్",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "వాయిస్",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "బేస్",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "ఆడియో మోడ్ వర్తించబడుతోంది...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "ఆడియో ట్యాబ్‌లు",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "వర్తించబడుతోంది...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 ఆడియో ట్యాబ్‌లు కనుగొనబడలేదు",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "శబ్దాన్ని నియంత్రించడానికి ఏదైనా ట్యాబ్‌లో ఆడియోను ప్లే చేయండి",
+    "description": "Hint message for no audio tabs"
+  },
+  "untitled": {
+    "message": "శీర్షికలేనిది",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "వాల్యూమ్‌ను నవీకరించడం విఫలమైంది",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "కంటెంట్ స్క్రిప్ట్‌ను లోడ్ చేయడం విఫలమైంది",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "ట్యాబ్‌ను మార్చడం విఫలమైంది",
+    "description": "Error when switching tab fails"
+  },
+  "quickSwitcher": {
+    "message": "త్వరిత స్విచ్చర్",
+    "description": "Title for quick audio tab switcher"
+  },
+  "switchToNext": {
+    "message": "తదుపరి ఆడియో ట్యాబ్",
+    "description": "Switch to next audio tab button"
+  },
+  "switchToPrev": {
+    "message": "మునుపటి ఆడియో ట్యాబ్",
+    "description": "Switch to previous audio tab button"
+  },
+  "muteAll": {
+    "message": "అన్నింటినీ మ్యూట్ చేయండి",
+    "description": "Mute all audio tabs button"
+  },
+  "muteTab": {
+    "message": "ట్యాబ్‌ను మ్యూట్ చేయండి",
+    "description": "Tooltip for mute tab button"
+  },
+  "unmuteTab": {
+    "message": "ట్యాబ్ మ్యూట్‌ను తీసివేయండి",
+    "description": "Tooltip for unmute tab button"
+  }
+}
