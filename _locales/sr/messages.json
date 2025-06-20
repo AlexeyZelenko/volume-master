@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Контрола јачине звука",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Потпуна контрола јачине звука на свим картицама. Подесите јачину звука до 600%, сачувајте подразумевану јачину звука по доменима и брзо се пребацујте између њих.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Пречица за искачући прозор:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Промени",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Ресетуј",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Картица утишана",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Картица утишана (Јачина звука: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Картица са звуком",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Картица са звуком (Јачина звука: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Јачина звука: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Утишај картицу (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Укључи звук картице (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Ресетуј јачину звука (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Отвори подешавања",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Сачувај",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Ресетуј",
+    "description": "Reset button text."
+  }
+}

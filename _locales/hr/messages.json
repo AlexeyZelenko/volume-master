@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Kontrola glasnoće",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Potpuna kontrola glasnoće na svim karticama. Postavite glasnoću do 600%, spremite zadanu glasnoću po domenama i brzo se prebacujte između njih.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Prečac za skočni prozor:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Promijeni",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Resetiraj",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Kartica utišana",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Kartica utišana (Glasnoća: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Kartica sa zvukom",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Kartica sa zvukom (Glasnoća: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Glasnoća: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Utišaj karticu (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Uključi zvuk kartice (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Resetiraj glasnoću (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Otvori postavke",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Spremi",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Resetiraj",
+    "description": "Reset button text."
+  }
+}
