@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Zesílení hlasitosti až o 600 % - Nejjednodušší a nejspolehlivější zesilovač hlasitosti",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Načítání zvukových karet...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Obnovit zvukové karty",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Přepnout tmavý režim",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Vylepšení zvuku",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Výchozí",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Hlas",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Basy",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Aplikuje se zvukový režim...",
+    "description": "Message when applying audio mode"
+  }
+}

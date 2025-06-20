@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Усилване на звука до 600% - Най-простият и надежден усилвател на звука",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Зареждане на аудио табове...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Обновяване на аудио табове",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Превключване на тъмен режим",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Подобряване на звука",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "По подразбиране",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Глас",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Бас",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Прилагане на аудио режим...",
+    "description": "Message when applying audio mode"
+  }
+}
