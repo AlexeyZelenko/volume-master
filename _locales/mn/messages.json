@@ -1,0 +1,204 @@
+{
+  "appName": {
+    "message": "Дууны Мастер",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "600% хүртэл дууг нэмэгдүүлэх - Хамгийн энгийн, найдвартай дууны өсгөгч",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Аудио табууд ачаалж байна...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Аудио табуудыг шинэчлэх",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Харанхуй горимыг асаах/унтраах",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Дууны чанаржуулалт",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Үндсэн",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Дуу хоолой",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Бас",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Дууны горим хэрэгжүүлж байна...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "Аудио табууд",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "Хэрэгжүүлж байна...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 Аудио таб олдсонгүй",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "Дууны түвшинг удирдахын тулд аль нэг табд дуу тоглуулна уу",
+    "description": "Hint message for no audio tabs"
+  },
+  "errorPrefix": {
+    "message": "⚠️",
+    "description": "Error message prefix"
+  },
+  "errorLoadingSettings": {
+    "message": "Тохиргоог ачаалж чадсангүй",
+    "description": "Error when loading settings fails"
+  },
+  "errorSavingSettings": {
+    "message": "Тохиргоог хадгалж чадсангүй",
+    "description": "Error when saving settings fails"
+  },
+  "errorGettingTabs": {
+    "message": "Аудио табуудыг авч чадсангүй",
+    "description": "Error when getting audio tabs fails"
+  },
+  "switchedToTab": {
+    "message": "✅ Табруу шилжлээ: $TITLE$",
+    "description": "Success message when switching tabs",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "YouTube"
+      }
+    }
+  },
+  "untitled": {
+    "message": "Гарчиггүй",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "Дууны түвшинг шинэчилж чадсангүй",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "Контент скриптийг ачаалж чадсангүй",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "Табыг солиж чадсангүй",
+    "description": "Error when switching tab fails"
+  },
+  "errorSwitchWindow": {
+    "message": "Цонхыг солиж чадсангүй",
+    "description": "Error when switching window fails"
+  },
+  "errorRefreshTabs": {
+    "message": "Табуудыг шинэчилж чадсангүй",
+    "description": "Error when refreshing tabs fails"
+  },
+  "quickSwitcher": {
+    "message": "Хурдан сэлгүүр",
+    "description": "Title for quick audio tab switcher"
+  },
+  "switchToNext": {
+    "message": "Дараагийн аудио таб",
+    "description": "Switch to next audio tab button"
+  },
+  "switchToPrev": {
+    "message": "Өмнөх аудио таб",
+    "description": "Switch to previous audio tab button"
+  },
+  "muteAll": {
+    "message": "Бүгдийг дуугүй болгох",
+    "description": "Mute all audio tabs button"
+  },
+  "noNextTab": {
+    "message": "Дараагийн аудио таб байхгүй",
+    "description": "Message when there's no next audio tab"
+  },
+  "noPrevTab": {
+    "message": "Өмнөх аудио таб байхгүй",
+    "description": "Message when there's no previous audio tab"
+  },
+  "allTabsMuted": {
+    "message": "Бүх аудио табууд дуугүй болсон",
+    "description": "Message when all tabs are muted"
+  },
+  "allTabsUnmuted": {
+    "message": "Бүх аудио табууд дуутай болсон",
+    "description": "Message when all tabs are unmuted"
+  },
+  "muteTab": {
+    "message": "Табыг дуугүй болгох",
+    "description": "Tooltip for mute tab button"
+  },
+  "unmuteTab": {
+    "message": "Табын дууг нээх",
+    "description": "Tooltip for unmute tab button"
+  },
+  "tabMuted": {
+    "message": "Таб дуугүй болсон",
+    "description": "Message when a tab is muted"
+  },
+  "tabUnmuted": {
+    "message": "Таб дуутай болсон",
+    "description": "Message when a tab is unmuted"
+  },
+  "errorTogglingMute": {
+    "message": "Дууг асаах/унтраахад алдаа гарлаа",
+    "description": "Error message when mute toggle fails"
+  },
+  "toggleCurrentTab": {
+    "message": "Идэвхтэй табын дууг асаах/унтраах",
+    "description": "Description for toggle current tab hotkey"
+  },
+  "switchAndClose": {
+    "message": "Табруу шилжээд popup-г хаах",
+    "description": "Tooltip for switch and close button"
+  },
+  "keepPopupOpen": {
+    "message": "Таб солих үед popup-г нээлттэй байлгах",
+    "description": "Tooltip for popup behavior toggle when active"
+  },
+  "allowPopupClose": {
+    "message": "Таб солих үед popup-г хаахыг зөвшөөрөх",
+    "description": "Tooltip for popup behavior toggle when inactive"
+  },
+  "popupWillStayOpen": {
+    "message": "Popup нээлттэй хэвээр байна",
+    "description": "Message when popup behavior is set to stay open"
+  },
+  "popupWillClose": {
+    "message": "Popup хаагдана",
+    "description": "Message when popup behavior is set to close"
+  }
+}
