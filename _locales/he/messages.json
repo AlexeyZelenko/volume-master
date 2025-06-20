@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "הגברת עוצמת שמע עד 600% - מגביר העוצמה הפשוט והאמין ביותר",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "טוען כרטיסיות שמע...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "רענן כרטיסיות שמע",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "החלף מצב כהה",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "שיפור שמע",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "ברירת מחדל",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "קול",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "בס",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "מחיל מצב שמע...",
+    "description": "Message when applying audio mode"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Amplificare volum până la 600% - Cel mai simplu și mai fiabil amplificator de volum",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Se încarcă filele audio...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Reîmprospătează filele audio",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Comutare mod întunecat",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Îmbunătățire Audio",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Implicit",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Voce",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Bass",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Se aplică modul audio...",
+    "description": "Message when applying audio mode"
+  }
+}

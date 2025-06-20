@@ -180,5 +180,25 @@
   "toggleCurrentTab": {
     "message": "Toggle current tab mute",
     "description": "Description for toggle current tab hotkey"
+  },
+  "switchAndClose": {
+    "message": "Switch to tab and close popup",
+    "description": "Tooltip for switch and close button"
+  },
+  "keepPopupOpen": {
+    "message": "Keep popup open when switching tabs",
+    "description": "Tooltip for popup behavior toggle when active"
+  },
+  "allowPopupClose": {
+    "message": "Allow popup to close when switching tabs",
+    "description": "Tooltip for popup behavior toggle when inactive"
+  },
+  "popupWillStayOpen": {
+    "message": "Popup will stay open",
+    "description": "Message when popup behavior is set to stay open"
+  },
+  "popupWillClose": {
+    "message": "Popup will close on tab switch",
+    "description": "Message when popup behavior is set to close"
   }
 } 

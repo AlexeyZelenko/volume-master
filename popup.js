@@ -50,6 +50,7 @@ class VolumePopup {
         this.updateTimeout = null; // For debouncing volume updates
         this.modeTimeout = null; // For debouncing mode changes
         this.currentAudioTabIndex = 0; // For quick switcher
+        this.keepPopupOpen = true; // Keep popup open when switching tabs
         
         this.init();
     }
@@ -118,8 +119,10 @@ class VolumePopup {
         // Header controls
         const refreshBtn = document.getElementById('refresh-btn');
         const themeToggle = document.getElementById('theme-toggle');
+        const popupBehaviorToggle = document.getElementById('popup-behavior-toggle');
         if (refreshBtn) refreshBtn.addEventListener('click', () => this.refreshAudioTabs());
         if (themeToggle) themeToggle.addEventListener('click', () => this.toggleDarkMode());
+        if (popupBehaviorToggle) popupBehaviorToggle.addEventListener('click', () => this.togglePopupBehavior());
 
         // Error close button
         const errorClose = document.getElementById('error-close');
@@ -145,10 +148,11 @@ class VolumePopup {
 
     async loadSettings() {
         try {
-            const result = await chrome.storage.sync.get(['volume', 'audioMode', 'isDarkMode']);
+            const result = await chrome.storage.sync.get(['volume', 'audioMode', 'isDarkMode', 'keepPopupOpen']);
             this.volume = result.volume || 100;
             this.audioMode = result.audioMode || 'default';
             this.isDarkMode = result.isDarkMode || false;
+            this.keepPopupOpen = result.keepPopupOpen !== undefined ? result.keepPopupOpen : true;
             
             // Обновляем значок при загрузке настроек
             await this.updateExtensionBadge();
@@ -174,7 +178,8 @@ class VolumePopup {
                 await chrome.storage.sync.set({
                     volume: this.volume,
                     audioMode: this.audioMode,
-                    isDarkMode: this.isDarkMode
+                    isDarkMode: this.isDarkMode,
+                    keepPopupOpen: this.keepPopupOpen
                 });
                 
                 // Обновляем значок на иконке расширения
@@ -355,7 +360,7 @@ class VolumePopup {
         }
     }
 
-    async switchToTab(tabId) {
+    async switchToTab(tabId, options = {}) {
         try {
             this.showApplying(true);
             this.clearError();
@@ -363,8 +368,13 @@ class VolumePopup {
             // Сначала получаем информацию о вкладке
             const tab = await chrome.tabs.get(tabId);
             
-            // Активируем вкладку без переключения фокуса окна
+            // Активируем вкладку
             await chrome.tabs.update(tabId, { active: true });
+            
+            // Переключаем окно только если явно запрошено
+            if (options.switchWindow) {
+                await this.switchToTabWindow(tabId);
+            }
             
             // Обновляем текущую вкладку
             this.currentTabId = tabId;
@@ -378,8 +388,14 @@ class VolumePopup {
             // Показываем краткое уведомление об успешном переключении
             this.showTabSwitchSuccess(tab.title);
             
-            // НЕ переключаем окно автоматически, чтобы попап не закрывался
-            console.log(`Volume Master: Switched to tab ${tabId} without changing window focus`);
+            // Закрываем popup только если явно запрошено
+            if (options.closePopup) {
+                setTimeout(() => {
+                    window.close();
+                }, 300);
+            }
+            
+            console.log(`Volume Master: Switched to tab ${tabId}`, options);
             
         } catch (error) {
             console.error('Error switching to tab:', error);
@@ -441,6 +457,7 @@ class VolumePopup {
         this.updateTabsList();
         this.updateSliderAppearance();
         this.updateThemeToggle();
+        this.updatePopupBehaviorToggle();
     }
 
     updateVolumeDisplay() {
@@ -487,12 +504,19 @@ class VolumePopup {
                 const tabItems = tabsList.querySelectorAll('.tab-item');
                 tabItems.forEach(item => {
                     item.addEventListener('click', (e) => {
-                        // Don't switch tab if clicking on mute button
-                        if (e.target.classList.contains('tab-mute-btn')) {
+                        // Don't switch tab if clicking on mute button or switch-close button
+                        if (e.target.classList.contains('tab-mute-btn') || 
+                            e.target.classList.contains('tab-switch-close-btn')) {
                             return;
                         }
                         const tabId = parseInt(item.dataset.tabId);
-                        this.switchToTab(tabId);
+                        
+                        // Use keepPopupOpen setting to determine behavior
+                        if (this.keepPopupOpen) {
+                            this.switchToTab(tabId, { switchWindow: false, closePopup: false });
+                        } else {
+                            this.switchToTab(tabId, { switchWindow: true, closePopup: true });
+                        }
                     });
                 });
 
@@ -504,6 +528,16 @@ class VolumePopup {
                         const tabId = parseInt(btn.dataset.tabId);
                         const isMuted = btn.dataset.muted === 'true';
                         this.toggleTabMute(tabId, !isMuted);
+                    });
+                });
+
+                // Add event listeners to switch-and-close buttons
+                const switchCloseButtons = tabsList.querySelectorAll('.tab-switch-close-btn');
+                switchCloseButtons.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent tab switching
+                        const tabId = parseInt(btn.dataset.tabId);
+                        this.switchToTab(tabId, { switchWindow: true, closePopup: true });
                     });
                 });
             }
@@ -534,6 +568,11 @@ class VolumePopup {
                             title="${tab.mutedInfo?.muted ? getMessage('unmuteTab') : getMessage('muteTab')}">
                         ${tab.mutedInfo?.muted ? '🔊' : '🔇'}
                     </button>
+                    <button class="tab-switch-close-btn" 
+                            data-tab-id="${tab.id}"
+                            title="${getMessage('switchAndClose')}">
+                        🔗
+                    </button>
                     <span class="tab-icon">${this.getTabIcon(tab)}</span>
                 </div>
             </div>
@@ -560,6 +599,17 @@ class VolumePopup {
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
             themeToggle.textContent = this.isDarkMode ? '☀️' : '🌙';
+        }
+    }
+
+    updatePopupBehaviorToggle() {
+        const popupBehaviorToggle = document.getElementById('popup-behavior-toggle');
+        if (popupBehaviorToggle) {
+            popupBehaviorToggle.classList.toggle('active', this.keepPopupOpen);
+            popupBehaviorToggle.textContent = this.keepPopupOpen ? '📍' : '🔗';
+            popupBehaviorToggle.title = this.keepPopupOpen ? 
+                getMessage('keepPopupOpen') : 
+                getMessage('allowPopupClose');
         }
     }
 
@@ -632,6 +682,18 @@ class VolumePopup {
         document.body.classList.toggle('dark-mode', this.isDarkMode);
         this.updateThemeToggle();
         this.saveSettings();
+    }
+
+    togglePopupBehavior() {
+        this.keepPopupOpen = !this.keepPopupOpen;
+        this.updatePopupBehaviorToggle();
+        this.saveSettings();
+        
+        // Show feedback
+        const message = this.keepPopupOpen ? 
+            getMessage('popupWillStayOpen') : 
+            getMessage('popupWillClose');
+        this.showToast(message);
     }
 
     setVolumeQuick(volume) {

@@ -163,7 +163,7 @@ body {
     gap: 8px;
 }
 
-.refresh-btn, .theme-toggle {
+.refresh-btn, .theme-toggle, .popup-behavior-toggle {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -178,10 +178,19 @@ body {
     color: var(--text-primary);
 }
 
-.refresh-btn:hover, .theme-toggle:hover {
+.refresh-btn:hover, .theme-toggle:hover, .popup-behavior-toggle:hover {
     background: var(--hover);
     transform: scale(1.05);
     border-color: var(--primary-color);
+}
+
+.popup-behavior-toggle.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.popup-behavior-toggle.active:hover {
+    background: var(--secondary-color);
 }
 
 /* Volume Section */
@@ -648,6 +657,33 @@ body {
 
 .tab-mute-btn[data-muted="true"]:hover {
     background: var(--secondary-color);
+}
+
+.tab-switch-close-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: var(--surface-elevated, var(--border));
+    color: var(--text-secondary);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.tab-switch-close-btn:hover {
+    opacity: 1;
+    background: var(--secondary-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+.tab-switch-close-btn:active {
+    transform: scale(0.95);
 }
 
 .tab-icon {
