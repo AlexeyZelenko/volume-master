@@ -1,0 +1,118 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "600% çenli ses güýçlendiriji - Iň ýönekeý we ygtybarly ses güýçlendiriji",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Ses tablar ýüklenýär...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Ses tablary täzelemek",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Garaňky režimi açmak/ýapmak",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Ses Gowulandyryş",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Adaty",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Ses",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Bas",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Ses režimi ulanylýar...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "Ses Tablar",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "Ulanylýar...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 Ses tablar tapylmady",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "Sesi dolandyrmak üçin islendik tabda ses oýnadyň",
+    "description": "Hint message for no audio tabs"
+  },
+  "untitled": {
+    "message": "Atsyz",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "Ses derejesi täzelenip bilinmedi",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "Mazmun skripti ýüklenip bilinmedi",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "Tab çalyşyp bilinmedi",
+    "description": "Error when switching tab fails"
+  },
+  "quickSwitcher": {
+    "message": "Çalt Çalyşdyryjy",
+    "description": "Title for quick audio tab switcher"
+  },
+  "switchToNext": {
+    "message": "Indiki Ses Tab",
+    "description": "Switch to next audio tab button"
+  },
+  "switchToPrev": {
+    "message": "Öňki Ses Tab",
+    "description": "Switch to previous audio tab button"
+  },
+  "muteAll": {
+    "message": "Hemmesini Sessiz Et",
+    "description": "Mute all audio tabs button"
+  },
+  "muteTab": {
+    "message": "Taby sessiz et",
+    "description": "Tooltip for mute tab button"
+  },
+  "unmuteTab": {
+    "message": "Tabyň sesini aç",
+    "description": "Tooltip for unmute tab button"
+  }
+}
