@@ -199,9 +199,8 @@
   },
   "popupWillClose": {
     "message": "Қалқымалы терезе жабылады",
-    "description": "Message when popup behavior is set to close"
-  }
-}{
+    "description": "Message when popup behavior is set to close"  
+  },
   "extensionName": {
     "message": "Volume Master - Garso valdymas",
     "description": "Extension name."
