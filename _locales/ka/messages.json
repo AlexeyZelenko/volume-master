@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - ხმის კონტროლი",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "სრული ხმის კონტროლი ყველა ჩანართზე. დააყენეთ ხმა 600%-მდე, შეინახეთ ნაგულისხმევი ხმა დომენების მიხედვით და სწრაფად გადართეთ მათ შორის.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "პოპაპის მალსახმობი:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "შეცვლა",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "გადატვირთვა",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "ჩანართი დადუმებულია",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "ჩანართი დადუმებულია (ხმა: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "ჩანართი ხმით",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "ჩანართი ხმით (ხმა: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "ხმა: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "ჩანართის დადუმება (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "ჩანართის ხმის ჩართვა (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "ხმის გადატვირთვა (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "პარამეტრების გახსნა",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "შენახვა",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "გადატვირთვა",
+    "description": "Reset button text."
+  }
+}

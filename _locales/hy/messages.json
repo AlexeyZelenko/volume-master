@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Ձայնի կառավարում",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Ձայնի լիակատար կառավարում բոլոր ներդիրներում։ Սահմանեք ձայնը մինչև 600%, պահպանեք կանխադրված ձայնը ըստ դոմենների և արագ փոխեք դրանց միջև։",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Ելնող պատուհանի արագ ստեղն՝",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Փոխել",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Վերակայել",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Ներդիրը լռեցված է",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Ներդիրը լռեցված է (Ձայն՝ $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Ներդիրը ձայնով",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Ներդիրը ձայնով (Ձայն՝ $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Ձայն՝ $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Լռեցնել ներդիրը (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Միացնել ներդիրի ձայնը (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Վերակայել ձայնը (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Բացել կարգավորումները",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Պահպանել",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Վերակայել",
+    "description": "Reset button text."
+  }
+}

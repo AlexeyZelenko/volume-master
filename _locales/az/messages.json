@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Səs İdarəetməsi",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Bütün tablarda tam səs idarəetməsi. Səsi 600%-ə qədər təyin edin, domenlər üzrə standart səsi saxlayın və onlar arasında sürətlə keçid edin.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Popup üçün qısayol düyməsi:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Dəyişdir",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Sıfırla",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Tab səssizdir",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Tab səssizdir (Səs: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Tab səslidir",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Tab səslidir (Səs: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Səs: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Tabı səssiz et (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Tabın səsini aç (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Səsi sıfırla (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Parametrləri aç",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Saxla",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Sıfırla",
+    "description": "Reset button text."
+  }
+}
