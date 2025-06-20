@@ -1,0 +1,118 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "То 600% пурзӯр кардани садо - Оддитарин ва боэътимодтарин пурзӯркунандаи садо",
+    "description": "Description of the extension"
+  },
+  "loading": {
+    "message": "Боркунии варақаҳои аудио...",
+    "description": "Loading message when getting audio tabs"
+  },
+  "refreshTabs": {
+    "message": "Навсозии варақаҳои аудио",
+    "description": "Tooltip for refresh button"
+  },
+  "toggleDarkMode": {
+    "message": "Гузариш ба ҳолати торик",
+    "description": "Tooltip for dark mode toggle"
+  },
+  "volumeValue": {
+    "message": "$VOLUME$%",
+    "description": "Volume percentage display",
+    "placeholders": {
+      "volume": {
+        "content": "$1",
+        "example": "100"
+      }
+    }
+  },
+  "audioEnhancement": {
+    "message": "Беҳтаркунии садо",
+    "description": "Section title for audio modes"
+  },
+  "modeDefault": {
+    "message": "Муқаррарӣ",
+    "description": "Default audio mode"
+  },
+  "modeVoice": {
+    "message": "Овоз",
+    "description": "Voice enhancement mode"
+  },
+  "modeBass": {
+    "message": "Бас",
+    "description": "Bass enhancement mode"
+  },
+  "applyingMode": {
+    "message": "Татбиқи ҳолати садо...",
+    "description": "Message when applying audio mode"
+  },
+  "audioTabs": {
+    "message": "Варақаҳои аудио",
+    "description": "Section title for audio tabs"
+  },
+  "tabsCount": {
+    "message": "($COUNT$)",
+    "description": "Number of audio tabs",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "applying": {
+    "message": "Татбиқ шуда истодааст...",
+    "description": "Generic applying message"
+  },
+  "noAudioTabs": {
+    "message": "🔇 Варақаҳои аудио ёфт нашуданд",
+    "description": "Message when no audio tabs found"
+  },
+  "noAudioTabsHint": {
+    "message": "Барои идора кардани баландии садо, дар ягон варақа садоро пахш кунед",
+    "description": "Hint message for no audio tabs"
+  },
+  "untitled": {
+    "message": "Беном",
+    "description": "Default title for tabs without title"
+  },
+  "errorUpdateVolume": {
+    "message": "Навсозии баландии садо имконнопазир аст",
+    "description": "Error when updating volume fails"
+  },
+  "errorLoadContentScript": {
+    "message": "Боркунии скрипти муҳтаво имконнопазир аст",
+    "description": "Error when loading content script fails"
+  },
+  "errorSwitchTab": {
+    "message": "Гузариш ба варақаи дигар имконнопазир аст",
+    "description": "Error when switching tab fails"
+  },
+  "quickSwitcher": {
+    "message": "Гузариши зуд",
+    "description": "Title for quick audio tab switcher"
+  },
+  "switchToNext": {
+    "message": "Варақаи аудиои навбатӣ",
+    "description": "Switch to next audio tab button"
+  },
+  "switchToPrev": {
+    "message": "Варақаи аудиои пешина",
+    "description": "Switch to previous audio tab button"
+  },
+  "muteAll": {
+    "message": "Хомӯш кардани ҳама",
+    "description": "Mute all audio tabs button"
+  },
+  "muteTab": {
+    "message": "Хомӯш кардани варақа",
+    "description": "Tooltip for mute tab button"
+  },
+  "unmuteTab": {
+    "message": "Фаъол кардани садои варақа",
+    "description": "Tooltip for unmute tab button"
+  }
+}
