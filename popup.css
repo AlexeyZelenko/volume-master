@@ -163,7 +163,7 @@ body {
     gap: 8px;
 }
 
-.refresh-btn, .theme-toggle, .popup-behavior-toggle {
+.help-btn, .refresh-btn, .theme-toggle, .popup-behavior-toggle {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -178,7 +178,7 @@ body {
     color: var(--text-primary);
 }
 
-.refresh-btn:hover, .theme-toggle:hover, .popup-behavior-toggle:hover {
+.help-btn:hover, .refresh-btn:hover, .theme-toggle:hover, .popup-behavior-toggle:hover {
     background: var(--hover);
     transform: scale(1.05);
     border-color: var(--primary-color);

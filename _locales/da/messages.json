@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Lydstyrke kontrol",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Fuld lydstyrke kontrol på alle faner. Indstil lydstyrken op til 600%, gem standard lydstyrke pr. domæne og skift hurtigt mellem dem.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Genvejstast til popup:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Skift",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Nulstil",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Fane lydløs",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Fane lydløs (Lydstyrke: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Fane med lyd",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Fane med lyd (Lydstyrke: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Lydstyrke: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Slå lyd fra på fane (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Slå lyd til på fane (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Nulstil lydstyrke (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Åbn indstillinger",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Gem",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Nulstil",
+    "description": "Reset button text."
+  }
+}

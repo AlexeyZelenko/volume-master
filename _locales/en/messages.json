@@ -200,5 +200,9 @@
   "popupWillClose": {
     "message": "Popup will close on tab switch",
     "description": "Message when popup behavior is set to close"
+  },
+  "userGuide": {
+    "message": "User Guide",
+    "description": "Tooltip for help button"
   }
 } 

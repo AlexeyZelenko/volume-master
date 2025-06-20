@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Volymkontroll",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Full volymkontroll på alla flikar. Ställ in volymen upp till 600%, spara standardvolym per domän och växla snabbt mellan dem.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Snabbtangent för popup:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Ändra",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Återställ",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Flik tystad",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Flik tystad (Volym: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Flik ej tystad",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Flik ej tystad (Volym: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Volym: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Tysta flik (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Aktivera ljud på flik (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Återställ volym (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Öppna inställningar",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Spara",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Återställ",
+    "description": "Reset button text."
+  }
+}

@@ -117,9 +117,11 @@ class VolumePopup {
         });
 
         // Header controls
+        const helpBtn = document.getElementById('help-btn');
         const refreshBtn = document.getElementById('refresh-btn');
         const themeToggle = document.getElementById('theme-toggle');
         const popupBehaviorToggle = document.getElementById('popup-behavior-toggle');
+        if (helpBtn) helpBtn.addEventListener('click', () => this.openUserGuide());
         if (refreshBtn) refreshBtn.addEventListener('click', () => this.refreshAudioTabs());
         if (themeToggle) themeToggle.addEventListener('click', () => this.toggleDarkMode());
         if (popupBehaviorToggle) popupBehaviorToggle.addEventListener('click', () => this.togglePopupBehavior());
@@ -962,6 +964,13 @@ class VolumePopup {
                 }
             }, 300);
         }, 2000);
+    }
+
+    openUserGuide() {
+        // Открываем страницу инструкций в новой вкладке
+        chrome.tabs.create({
+            url: chrome.runtime.getURL('instructions.html')
+        });
     }
 }
 

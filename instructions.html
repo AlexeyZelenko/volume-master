@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Master - User Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #4285f4, #34a853);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #4285f4;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e8eaed;
+        }
+        
+        .keyboard-shortcut {
+            background: #333;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 0 2px;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .tip {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        ol.step-list {
+            counter-reset: step-counter;
+            padding-left: 0;
+        }
+        
+        ol.step-list li {
+            counter-increment: step-counter;
+            margin: 15px 0;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        ol.step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #4285f4;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <span>🔊</span>
+            Volume Master User Guide
+        </h1>
+        <p>Advanced Audio Control for Chrome Browser</p>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Overview</h2>
+        <p>Volume Master is a powerful Chrome extension that gives you complete control over audio in your browser tabs. Boost volume up to 600%, apply audio enhancements, and manage multiple audio sources with ease.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>🔊 Volume Boost</h4>
+                <p>Increase volume up to 600% for quiet videos and audio</p>
+            </div>
+            <div class="feature-card">
+                <h4>🎵 Audio Enhancement</h4>
+                <p>Voice clarity and bass boost modes for better audio quality</p>
+            </div>
+            <div class="feature-card">
+                <h4>🔄 Quick Switching</h4>
+                <p>Instantly switch between audio tabs with keyboard shortcuts</p>
+            </div>
+            <div class="feature-card">
+                <h4>🔇 Smart Mute</h4>
+                <p>Individual and bulk mute controls for all audio tabs</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📥 Installation</h2>
+        
+        <h3>🌐 From Chrome Web Store</h3>
+        <ol class="step-list">
+            <li>Open Chrome Web Store</li>
+            <li>Search for "Volume Master"</li>
+            <li>Click "Add to Chrome"</li>
+            <li>Confirm by clicking "Add extension"</li>
+            <li>Pin the extension to your toolbar for easy access</li>
+        </ol>
+
+        <h3>📁 Manual Installation (Developer Mode)</h3>
+        <ol class="step-list">
+            <li>Download the extension files</li>
+            <li>Open Chrome and go to chrome://extensions/</li>
+            <li>Enable "Developer mode" in the top right</li>
+            <li>Click "Load unpacked" and select the extension folder</li>
+            <li>The extension will appear in your toolbar</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>🎛️ Basic Usage</h2>
+        
+        <h3>🚀 Getting Started</h3>
+        <ol class="step-list">
+            <li>Play audio in any Chrome tab (YouTube, Spotify, etc.)</li>
+            <li>Click the Volume Master icon in your toolbar</li>
+            <li>The extension will automatically detect audio tabs</li>
+            <li>Use the volume slider or preset buttons to adjust volume</li>
+        </ol>
+
+        <h3>🎯 Main Interface</h3>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>🔊 Volume Display</h4>
+                <p>Shows current volume level with color-coded indicator:</p>
+                <ul>
+                    <li>🔵 Blue: 0-100% (Normal)</li>
+                    <li>🟠 Orange: 101-300% (Boosted)</li>
+                    <li>🔴 Red: 301-600% (High Boost)</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h4>📊 Audio Tabs List</h4>
+                <p>Shows all tabs currently playing audio:</p>
+                <ul>
+                    <li>Click tab to switch to it</li>
+                    <li>Use mute buttons for individual control</li>
+                    <li>Current tab is highlighted</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔊 Volume Control</h2>
+        
+        <h3>🎚️ Volume Slider</h3>
+        <p>The main volume slider allows precise control from 0% to 600%:</p>
+        <ul>
+            <li><strong>Drag</strong> the slider to adjust volume</li>
+            <li><strong>Click</strong> anywhere on the slider track to jump to that level</li>
+            <li>Volume changes apply immediately to the current audio tab</li>
+        </ul>
+
+        <h3>⚡ Quick Preset Buttons</h3>
+        <p>Click any preset button for instant volume adjustment:</p>
+        <ul>
+            <li>🔇 0% - Complete silence</li>
+            <li>50% - Quiet level</li>
+            <li>100% - Normal level</li>
+            <li>200% - Moderate boost</li>
+            <li>400% - High boost</li>
+            <li>600% - Maximum boost</li>
+        </ul>
+
+        <h3>🔧 Fine Adjustment</h3>
+        <p>Use the + and - buttons for precise volume control:</p>
+        <ul>
+            <li>Below 100%: Adjusts in 10% increments</li>
+            <li>Above 100%: Adjusts in 50% increments</li>
+        </ul>
+
+        <div class="warning">
+            <strong>⚠️ Volume Safety:</strong> High volume levels (above 300%) may cause audio distortion or damage to speakers/headphones. Use with caution!
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎵 Audio Enhancement Modes</h2>
+        
+        <p>Volume Master includes three audio enhancement modes to optimize sound quality for different content types:</p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>🔊 Default Mode</h4>
+                <p>Standard audio processing with no additional enhancement. Best for:</p>
+                <ul>
+                    <li>Music with balanced audio</li>
+                    <li>General web browsing</li>
+                    <li>Content with good audio quality</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4>🎤 Voice Mode</h4>
+                <p>Enhanced clarity for speech and vocals. Ideal for:</p>
+                <ul>
+                    <li>Video calls and meetings</li>
+                    <li>Podcasts and audiobooks</li>
+                    <li>Educational videos</li>
+                    <li>News and interviews</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4>🎵 Bass Mode</h4>
+                <p>Enhanced low-frequency response for richer sound. Perfect for:</p>
+                <ul>
+                    <li>Music with heavy bass</li>
+                    <li>Gaming audio</li>
+                    <li>Movies and trailers</li>
+                    <li>Electronic and hip-hop music</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tip">
+            <strong>💡 Pro Tip:</strong> Audio modes work best when combined with volume levels between 100-300%. The enhancement is most noticeable with quality audio sources.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔄 Quick Tab Switcher</h2>
+        
+        <p>The Quick Switcher feature allows you to rapidly navigate between audio tabs without manually searching through your browser tabs.</p>
+
+        <h3>🎛️ Switcher Controls</h3>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>⏮️ Previous Tab</h4>
+                <p>Switch to the previous audio tab in the list</p>
+            </div>
+            <div class="feature-card">
+                <h4>⏭️ Next Tab</h4>
+                <p>Switch to the next audio tab in the list</p>
+            </div>
+            <div class="feature-card">
+                <h4>🔇 Mute All</h4>
+                <p>Toggle mute state for all audio tabs at once</p>
+            </div>
+        </div>
+
+        <h3>🔄 Cycling Behavior</h3>
+        <ul>
+            <li>Tabs cycle in order: when you reach the last tab, it goes to the first</li>
+            <li>Only audio tabs are included in the cycle</li>
+            <li>If no audio tabs exist, buttons are disabled</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🔇 Mute Controls</h2>
+        
+        <h3>🎯 Individual Tab Mute</h3>
+        <p>Each audio tab in the list has its own mute button:</p>
+        <ul>
+            <li><strong>🔇 Mute Button:</strong> Click to mute the tab</li>
+            <li><strong>🔊 Unmute Button:</strong> Click to unmute the tab</li>
+            <li>Button state updates immediately</li>
+            <li>Muted tabs show with highlighted mute button</li>
+        </ul>
+
+        <h3>🔗 Tab Interaction</h3>
+        <p>When clicking on tabs in the list:</p>
+        <ul>
+            <li><strong>Click tab area:</strong> Switch to tab (behavior depends on popup settings)</li>
+            <li><strong>Click mute button:</strong> Toggle mute without switching</li>
+            <li><strong>Click switch button (🔗):</strong> Switch to tab and close popup</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>⌨️ Keyboard Shortcuts</h2>
+        
+        <p>Volume Master includes powerful keyboard shortcuts for hands-free audio control:</p>
+
+        <h3>🔄 Tab Navigation</h3>
+        <ul>
+            <li><kbd class="keyboard-shortcut">Ctrl+Shift+→</kbd> Switch to next audio tab</li>
+            <li><kbd class="keyboard-shortcut">Ctrl+Shift+←</kbd> Switch to previous audio tab</li>
+        </ul>
+
+        <h3>🔇 Mute Controls</h3>
+        <ul>
+            <li><kbd class="keyboard-shortcut">Ctrl+Shift+M</kbd> Toggle mute all audio tabs</li>
+            <li><kbd class="keyboard-shortcut">Ctrl+Shift+X</kbd> Toggle mute current tab</li>
+        </ul>
+
+        <h3>⚙️ Customizing Shortcuts</h3>
+        <ol class="step-list">
+            <li>Open Chrome and go to chrome://extensions/shortcuts</li>
+            <li>Find "Volume Master" in the list</li>
+            <li>Click the pencil icon next to any shortcut</li>
+            <li>Press your desired key combination</li>
+            <li>Click "OK" to save</li>
+        </ol>
+
+        <div class="tip">
+            <strong>💡 Pro Tip:</strong> Keyboard shortcuts work even when the Volume Master popup is closed, making them perfect for quick audio management during presentations or gaming.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>⚙️ Settings & Preferences</h2>
+        
+        <h3>🌙 Theme Toggle</h3>
+        <p>Click the theme button in the header to switch between light and dark modes:</p>
+        <ul>
+            <li><strong>🌙 Light Mode:</strong> Default bright theme</li>
+            <li><strong>☀️ Dark Mode:</strong> Easy on the eyes for low-light use</li>
+            <li>Theme preference is saved automatically</li>
+        </ul>
+
+        <h3>📍 Popup Behavior</h3>
+        <p>Control how the popup behaves when switching tabs:</p>
+        <ul>
+            <li><strong>📍 Pin Mode (Default):</strong> Popup stays open when switching tabs</li>
+            <li><strong>🔗 Auto-Close Mode:</strong> Popup closes when switching tabs</li>
+            <li>Toggle by clicking the pin button in the header</li>
+        </ul>
+
+        <h3>💾 Data Storage</h3>
+        <p>Volume Master automatically saves:</p>
+        <ul>
+            <li>Volume level settings</li>
+            <li>Audio enhancement mode</li>
+            <li>Theme preference</li>
+            <li>Popup behavior setting</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🔧 Troubleshooting</h2>
+        
+        <div class="feature-card">
+            <h4>🔇 No Audio Tabs Detected</h4>
+            <p><strong>Solutions:</strong></p>
+            <ul>
+                <li>Make sure audio is actually playing in a tab</li>
+                <li>Click the refresh button (🔄) in Volume Master</li>
+                <li>Reload the audio tab and try again</li>
+                <li>Check if the tab is muted in Chrome</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h4>🔊 Volume Not Changing</h4>
+            <p><strong>Solutions:</strong></p>
+            <ul>
+                <li>Ensure the tab is actively playing audio</li>
+                <li>Try refreshing the audio tab</li>
+                <li>Check if the website has its own volume controls</li>
+                <li>Disable other audio extensions temporarily</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h4>⌨️ Keyboard Shortcuts Not Working</h4>
+            <p><strong>Solutions:</strong></p>
+            <ul>
+                <li>Check if shortcuts conflict with other extensions</li>
+                <li>Go to chrome://extensions/shortcuts to verify</li>
+                <li>Try different key combinations</li>
+                <li>Restart Chrome and test again</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>💡 Tips & Tricks</h2>
+        
+        <h3>🎯 Best Practices</h3>
+        <ul>
+            <li><strong>Start Low:</strong> Begin with 100% volume and increase gradually</li>
+            <li><strong>Use Presets:</strong> Quick buttons are faster than dragging the slider</li>
+            <li><strong>Pin the Extension:</strong> Keep Volume Master visible in your toolbar</li>
+            <li><strong>Learn Shortcuts:</strong> Keyboard shortcuts save time during presentations</li>
+        </ul>
+
+        <h3>🎵 Audio Quality Tips</h3>
+        <ul>
+            <li><strong>Voice Mode:</strong> Great for online meetings and lectures</li>
+            <li><strong>Bass Mode:</strong> Enhances music and movie audio</li>
+            <li><strong>Sweet Spot:</strong> 150-250% often provides the best balance</li>
+            <li><strong>Avoid Distortion:</strong> If audio sounds distorted, lower the volume</li>
+        </ul>
+
+        <h3>🎮 Gaming Setup</h3>
+        <ul>
+            <li>Set game audio to Bass Mode for immersive sound</li>
+            <li>Use Quick Switcher to manage Discord and game audio</li>
+            <li>Pin popup mode for easy access during gameplay</li>
+            <li>Use Ctrl+Shift+M to quickly mute all tabs during streams</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; padding: 40px 0; color: #666;">
+        <p>Volume Master v1.0.5 | Made with ❤️ for better audio control</p>
+        <p style="margin-top: 10px;">
+            🔊 Boost Your Audio | 🎵 Enhance Your Experience | 🚀 Control Your Sound
+        </p>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Volumkontroll",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Full volumkontroll på alle faner. Still inn volum opptil 600%, lagre standardvolum per domene og bytt raskt mellom dem.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Hurtigtast for popup:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Endre",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Tilbakestill",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Fane dempet",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Fane dempet (Volum: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Fane ikke dempet",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Fane ikke dempet (Volum: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Volum: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Demp fane (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Opphev demping av fane (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Tilbakestill volum (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Åpne innstillinger",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Lagre",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Tilbakestill",
+    "description": "Reset button text."
+  }
+}

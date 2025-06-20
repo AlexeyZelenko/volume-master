@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Äänenvoimakkuuden hallinta",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Täysi äänenvoimakkuuden hallinta kaikilla välilehdillä. Aseta äänenvoimakkuus jopa 600%, tallenna oletusäänenvoimakkuus verkkotunnuksittain ja vaihda niiden välillä nopeasti.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Ponnahdusikkunan pikanäppäin:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Vaihda",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Nollaa",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Välilehti mykistetty",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Välilehti mykistetty (Äänenvoimakkuus: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Välilehden ääni päällä",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Välilehden ääni päällä (Äänenvoimakkuus: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Äänenvoimakkuus: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Mykistä välilehti (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Poista välilehden mykistys (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Nollaa äänenvoimakkuus (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Avaa asetukset",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Tallenna",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Nollaa",
+    "description": "Reset button text."
+  }
+}

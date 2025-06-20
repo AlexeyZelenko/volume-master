@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Hangerő szabályozó",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Teljes hangerőszabályozás minden lapon. Állítsa be a hangerőt 600%-ig, mentse el az alapértelmezett hangerőt domainek szerint és gyorsan váltson közöttük.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Felugró ablak gyorsbillentyű:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Módosítás",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Alaphelyzet",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Lap némítva",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Lap némítva (Hangerő: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Lap hangosítva",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Lap hangosítva (Hangerő: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Hangerő: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Lap némítása (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Lap hangosítása (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Alapértelmezett hangerő (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Beállítások megnyitása",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Mentés",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Alaphelyzet",
+    "description": "Reset button text."
+  }
+}

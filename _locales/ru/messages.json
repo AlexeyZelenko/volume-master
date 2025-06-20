@@ -200,5 +200,9 @@
   "popupWillClose": {
     "message": "Попап будет закрываться при переключении",
     "description": "Message when popup behavior is set to close"
+  },
+  "userGuide": {
+    "message": "Руководство пользователя",
+    "description": "Tooltip for help button"
   }
 } 
