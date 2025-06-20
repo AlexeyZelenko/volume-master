@@ -1,0 +1,81 @@
+{
+  "extensionName": {
+    "message": "Volume Master - Volumebeheer",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Volledige volumecontrole op alle tabbladen. Stel het volume in tot 600%, sla standaardvolume op per domein en schakel snel tussen hen.",
+    "description": "Extension description."
+  },
+  "popupHotkey": {
+    "message": "Sneltoets voor popup:",
+    "description": "Popup hotkey label."
+  },
+  "changeHotkey": {
+    "message": "Wijzigen",
+    "description": "Change hotkey button text."
+  },
+  "resetHotkey": {
+    "message": "Herstellen",
+    "description": "Reset hotkey button text."
+  },
+  "tabMuted": {
+    "message": "Tabblad gedempt",
+    "description": "Tab muted text."
+  },
+  "tabMutedVolumeValue": {
+    "message": "Tabblad gedempt (Volume: $volume$%)",
+    "description": "Tab muted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "tabUnmuted": {
+    "message": "Tabblad niet gedempt",
+    "description": "Tab unmuted text."
+  },
+  "tabUnmutedVolumeValue": {
+    "message": "Tabblad niet gedempt (Volume: $volume$%)",
+    "description": "Tab unmuted with volume value text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "volumeChanged": {
+    "message": "Volume: $volume$%",
+    "description": "Volume changed text.",
+    "placeholders": {
+      "volume": {
+        "content": "$1"
+      }
+    }
+  },
+  "muteTab": {
+    "message": "Demp tabblad (M)",
+    "description": "Mute tab button text."
+  },
+  "unmuteTab": {
+    "message": "Demping opheffen (M)",
+    "description": "Unmute tab button text."
+  },
+  "resetVolume": {
+    "message": "Volume herstellen (R)",
+    "description": "Reset volume button text."
+  },
+  "openSettings": {
+    "message": "Instellingen openen",
+    "description": "Open settings button text."
+  },
+  "save": {
+    "message": "Opslaan",
+    "description": "Save button text."
+  },
+  "reset": {
+    "message": "Herstellen",
+    "description": "Reset button text."
+  }
+}
