@@ -1,4 +1,12 @@
 {
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Tot 600% volumeversterking - De eenvoudigste en meest betrouwbare volumeversterker",
+    "description": "Description of the extension"
+  },
   "extensionName": {
     "message": "Volume Master - Volumebeheer",
     "description": "Extension name."

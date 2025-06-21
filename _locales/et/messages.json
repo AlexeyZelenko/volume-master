@@ -1,4 +1,12 @@
 {
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Kuni 600% helitugevuse tõstmine - Lihtsaim ja usaldusväärseim helitugevuse võimendaja",
+    "description": "Description of the extension"
+  },
   "extensionName": {
     "message": "Volume Master - Helitugevuse juhtimine",
     "description": "Extension name."

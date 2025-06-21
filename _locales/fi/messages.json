@@ -1,4 +1,12 @@
 {
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Jopa 600% äänenvoimakkuuden lisäys - Yksinkertaisin ja luotettavin äänenvoimakkuuden vahvistin",
+    "description": "Description of the extension"
+  },
   "extensionName": {
     "message": "Volume Master - Äänenvoimakkuuden hallinta",
     "description": "Extension name."

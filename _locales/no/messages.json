@@ -1,4 +1,12 @@
 {
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Opptil 600% volumforsterkning - Den enkleste og mest pålitelige volumforsterkeren",
+    "description": "Description of the extension"
+  },
   "extensionName": {
     "message": "Volume Master - Volumkontroll",
     "description": "Extension name."

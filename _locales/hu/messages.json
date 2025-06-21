@@ -1,4 +1,12 @@
 {
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Akár 600%-os hangerő-növelés - A legegyszerűbb és legmegbízhatóbb hangerő-erősítő",
+    "description": "Description of the extension"
+  },
   "extensionName": {
     "message": "Volume Master - Hangerő szabályozó",
     "description": "Extension name."

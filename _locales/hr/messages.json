@@ -1,4 +1,12 @@
 {
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Do 600% pojačanja glasnoće - Najjednostavniji i najpouzdaniji pojačivač glasnoće",
+    "description": "Description of the extension"
+  },
   "extensionName": {
     "message": "Volume Master - Kontrola glasnoće",
     "description": "Extension name."

@@ -1,4 +1,12 @@
 {
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "До 600% појачање јачине звука - Најједноставнији и најпоузданији појачивач јачине звука",
+    "description": "Description of the extension"
+  },
   "extensionName": {
     "message": "Volume Master - Контрола јачине звука",
     "description": "Extension name."

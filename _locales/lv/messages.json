@@ -1,4 +1,12 @@
 {
+  "appName": {
+    "message": "Volume Master",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Līdz 600% skaļuma pastiprināšana - Vienkāršākais un uzticamākais skaļuma pastiprinātājs",
+    "description": "Description of the extension"
+  },
   "extensionName": {
     "message": "Volume Master - Skaļuma kontrole",
     "description": "Extension name."
