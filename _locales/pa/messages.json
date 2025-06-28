@@ -1,0 +1,42 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "The title of the application."
+  },
+  "appDescription": {
+    "message": "ਹਰ ਟੈਬ 'ਤੇ ਵਾਲੀਅਮ ਕੰਟਰੋਲ",
+    "description": "The description of the application."
+  },
+  "loading": {
+    "message": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...",
+    "description": "Loading message"
+  },
+  "refreshTabs": {
+    "message": "ਟੈਬਾਂ ਰਿਫਰੈਸ਼ ਕਰੋ",
+    "description": "Refresh Tabs"
+  },
+  "options": {
+    "message": "ਵਿਕਲਪ",
+    "description": "Options"
+  },
+  "help": {
+    "message": "ਮਦਦ",
+    "description": "Help"
+  },
+  "donate": {
+    "message": "ਦਾਨ ਕਰੋ",
+    "description": "Donate"
+  },
+  "close": {
+    "message": "ਬੰਦ ਕਰੋ",
+    "description": "Close"
+  },
+  "content_mute": {
+    "message": "ਟੈਬ ਮਿਊਟ ਕਰੋ",
+    "description": "Mute Tab"
+  },
+  "content_unmute": {
+    "message": "ਟੈਬ ਅਨਮਿਊਟ ਕਰੋ",
+    "description": "Unmute Tab"
+  }
+}

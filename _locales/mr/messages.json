@@ -1,0 +1,42 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "The title of the application."
+  },
+  "appDescription": {
+    "message": "प्रत्येक टॅबवर आवाज नियंत्रण",
+    "description": "The description of the application."
+  },
+  "loading": {
+    "message": "लोड होत आहे...",
+    "description": "Loading message"
+  },
+  "refreshTabs": {
+    "message": "टॅब्स रीफ्रेश करा",
+    "description": "Refresh Tabs"
+  },
+  "options": {
+    "message": "पर्याय",
+    "description": "Options"
+  },
+  "help": {
+    "message": "मदत",
+    "description": "Help"
+  },
+  "donate": {
+    "message": "दान करा",
+    "description": "Donate"
+  },
+  "close": {
+    "message": "बंद करा",
+    "description": "Close"
+  },
+  "content_mute": {
+    "message": "टॅब म्यूट करा",
+    "description": "Mute Tab"
+  },
+  "content_unmute": {
+    "message": "टॅब अनम्यूट करा",
+    "description": "Unmute Tab"
+  }
+}

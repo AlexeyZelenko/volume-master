@@ -1,0 +1,42 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "The title of the application."
+  },
+  "appDescription": {
+    "message": "વોલ્યુમ નિયંત્રણ દરેક ટૅબ પર",
+    "description": "The description of the application."
+  },
+  "loading": {
+    "message": "લોડ થઈ રહ્યું છે...",
+    "description": "Loading message"
+  },
+  "refreshTabs": {
+    "message": "ટૅબ્સ રિફ્રેશ કરો",
+    "description": "Refresh Tabs"
+  },
+  "options": {
+    "message": "વિકલ્પો",
+    "description": "Options"
+  },
+  "help": {
+    "message": "મદદ",
+    "description": "Help"
+  },
+  "donate": {
+    "message": "દાન કરો",
+    "description": "Donate"
+  },
+  "close": {
+    "message": "બંધ કરો",
+    "description": "Close"
+  },
+  "content_mute": {
+    "message": "ટૅબ મ્યૂટ કરો",
+    "description": "Mute Tab"
+  },
+  "content_unmute": {
+    "message": "ટૅબ અનમ્યૂટ કરો",
+    "description": "Unmute Tab"
+  }
+}

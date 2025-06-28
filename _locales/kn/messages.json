@@ -1,0 +1,42 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "The title of the application."
+  },
+  "appDescription": {
+    "message": "ಪ್ರತಿ ಟ್ಯಾಬ್‌ನಲ್ಲಿ ಧ್ವನಿ ನಿಯಂತ್ರಣ",
+    "description": "The description of the application."
+  },
+  "loading": {
+    "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
+    "description": "Loading message"
+  },
+  "refreshTabs": {
+    "message": "ಟ್ಯಾಬ್‌ಗಳನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಿ",
+    "description": "Refresh Tabs"
+  },
+  "options": {
+    "message": "ಆಯ್ಕೆಗಳು",
+    "description": "Options"
+  },
+  "help": {
+    "message": "ಸಹಾಯ",
+    "description": "Help"
+  },
+  "donate": {
+    "message": "ದಾನ ಮಾಡಿ",
+    "description": "Donate"
+  },
+  "close": {
+    "message": "ಮುಚ್ಚಿ",
+    "description": "Close"
+  },
+  "content_mute": {
+    "message": "ಟ್ಯಾಬ್ ಮ್ಯೂಟ್ ಮಾಡಿ",
+    "description": "Mute Tab"
+  },
+  "content_unmute": {
+    "message": "ಟ್ಯಾಬ್ ಅನ್‌ಮ್ಯೂಟ್ ಮಾಡಿ",
+    "description": "Unmute Tab"
+  }
+}

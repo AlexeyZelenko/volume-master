@@ -1,0 +1,42 @@
+{
+  "appName": {
+    "message": "Volume Master",
+    "description": "The title of the application."
+  },
+  "appDescription": {
+    "message": "ପ୍ରତ୍ୟେକ ଟ୍ୟାବରେ ଭଲ୍ୟୁମ୍ ନିୟନ୍ତ୍ରଣ",
+    "description": "The description of the application."
+  },
+  "loading": {
+    "message": "ଲୋଡ୍ ହେଉଛି...",
+    "description": "Loading message"
+  },
+  "refreshTabs": {
+    "message": "ଟ୍ୟାବ୍ ରିଫ୍ରେଶ୍ କରନ୍ତୁ",
+    "description": "Refresh Tabs"
+  },
+  "options": {
+    "message": "ବିକଳ୍ପଗୁଡ଼ିକ",
+    "description": "Options"
+  },
+  "help": {
+    "message": "ସହାୟତା",
+    "description": "Help"
+  },
+  "donate": {
+    "message": "ଦାନ କରନ୍ତୁ",
+    "description": "Donate"
+  },
+  "close": {
+    "message": "ବନ୍ଦ କରନ୍ତୁ",
+    "description": "Close"
+  },
+  "content_mute": {
+    "message": "ଟ୍ୟାବ୍ ମ୍ୟୁଟ୍ କରନ୍ତୁ",
+    "description": "Mute Tab"
+  },
+  "content_unmute": {
+    "message": "ଟ୍ୟାବ୍ ଅନମ୍ୟୁଟ୍ କରନ୍ତୁ",
+    "description": "Unmute Tab"
+  }
+}
