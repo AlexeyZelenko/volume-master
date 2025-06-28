@@ -91,23 +91,30 @@
             margin: 15px 0;
         }
         
+        /* Styled numbered lists */
         ol.step-list {
             counter-reset: step-counter;
             padding-left: 0;
+            list-style: none;
         }
         
         ol.step-list li {
             counter-increment: step-counter;
             margin: 15px 0;
-            padding-left: 40px;
+            padding-left: 50px;
             position: relative;
+            background: #f8f9fa;
+            padding: 15px 15px 15px 50px;
+            border-radius: 8px;
+            border-left: 4px solid #4285f4;
         }
         
         ol.step-list li::before {
             content: counter(step-counter);
             position: absolute;
-            left: 0;
-            top: 0;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
             background: #4285f4;
             color: white;
             width: 25px;
@@ -116,7 +123,115 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Styled bullet lists */
+        ul.styled-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul.styled-list li {
+            margin: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        ul.styled-list li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #4285f4;
             font-size: 0.8rem;
+        }
+
+        /* Color-coded list items */
+        ul.volume-levels li {
+            margin: 8px 0;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        ul.volume-levels li:nth-child(1) { background: #e3f2fd; border-left: 4px solid #2196f3; }
+        ul.volume-levels li:nth-child(2) { background: #fff3e0; border-left: 4px solid #ff9800; }
+        ul.volume-levels li:nth-child(3) { background: #ffebee; border-left: 4px solid #f44336; }
+
+        /* Preset buttons styling */
+        ul.preset-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.preset-buttons li {
+            background: linear-gradient(135deg, #4285f4, #34a853);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Keyboard shortcuts list */
+        ul.shortcuts-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.shortcuts-list li {
+            margin: 10px 0;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #4285f4;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Troubleshooting cards */
+        .troubleshoot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .troubleshoot-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e8eaed;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .troubleshoot-card h4 {
+            color: #d73502;
+            margin-bottom: 10px;
+        }
+
+        .troubleshoot-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .troubleshoot-card li {
+            margin: 8px 0;
+            padding: 8px 12px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #34a853;
+        }
+
+        .troubleshoot-card li::before {
+            content: "✓ ";
+            color: #34a853;
             font-weight: bold;
         }
     </style>
@@ -192,7 +307,7 @@
             <div class="feature-card">
                 <h4>🔊 Volume Display</h4>
                 <p>Shows current volume level with color-coded indicator:</p>
-                <ul>
+                <ul class="volume-levels">
                     <li>🔵 Blue: 0-100% (Normal)</li>
                     <li>🟠 Orange: 101-300% (Boosted)</li>
                     <li>🔴 Red: 301-600% (High Boost)</li>
@@ -201,7 +316,7 @@
             <div class="feature-card">
                 <h4>📊 Audio Tabs List</h4>
                 <p>Shows all tabs currently playing audio:</p>
-                <ul>
+                <ul class="styled-list">
                     <li>Click tab to switch to it</li>
                     <li>Use mute buttons for individual control</li>
                     <li>Current tab is highlighted</li>
@@ -215,7 +330,7 @@
         
         <h3>🎚️ Volume Slider</h3>
         <p>The main volume slider allows precise control from 0% to 600%:</p>
-        <ul>
+        <ul class="styled-list">
             <li><strong>Drag</strong> the slider to adjust volume</li>
             <li><strong>Click</strong> anywhere on the slider track to jump to that level</li>
             <li>Volume changes apply immediately to the current audio tab</li>
@@ -223,7 +338,7 @@
 
         <h3>⚡ Quick Preset Buttons</h3>
         <p>Click any preset button for instant volume adjustment:</p>
-        <ul>
+        <ul class="preset-buttons">
             <li>🔇 0% - Complete silence</li>
             <li>50% - Quiet level</li>
             <li>100% - Normal level</li>
@@ -234,7 +349,7 @@
 
         <h3>🔧 Fine Adjustment</h3>
         <p>Use the + and - buttons for precise volume control:</p>
-        <ul>
+        <ul class="styled-list">
             <li>Below 100%: Adjusts in 10% increments</li>
             <li>Above 100%: Adjusts in 50% increments</li>
         </ul>
@@ -253,7 +368,7 @@
             <div class="feature-card">
                 <h4>🔊 Default Mode</h4>
                 <p>Standard audio processing with no additional enhancement. Best for:</p>
-                <ul>
+                <ul class="styled-list">
                     <li>Music with balanced audio</li>
                     <li>General web browsing</li>
                     <li>Content with good audio quality</li>
@@ -263,7 +378,7 @@
             <div class="feature-card">
                 <h4>🎤 Voice Mode</h4>
                 <p>Enhanced clarity for speech and vocals. Ideal for:</p>
-                <ul>
+                <ul class="styled-list">
                     <li>Video calls and meetings</li>
                     <li>Podcasts and audiobooks</li>
                     <li>Educational videos</li>
@@ -274,7 +389,7 @@
             <div class="feature-card">
                 <h4>🎵 Bass Mode</h4>
                 <p>Enhanced low-frequency response for richer sound. Perfect for:</p>
-                <ul>
+                <ul class="styled-list">
                     <li>Music with heavy bass</li>
                     <li>Gaming audio</li>
                     <li>Movies and trailers</li>
@@ -310,7 +425,7 @@
         </div>
 
         <h3>🔄 Cycling Behavior</h3>
-        <ul>
+        <ul class="styled-list">
             <li>Tabs cycle in order: when you reach the last tab, it goes to the first</li>
             <li>Only audio tabs are included in the cycle</li>
             <li>If no audio tabs exist, buttons are disabled</li>
@@ -322,7 +437,7 @@
         
         <h3>🎯 Individual Tab Mute</h3>
         <p>Each audio tab in the list has its own mute button:</p>
-        <ul>
+        <ul class="styled-list">
             <li><strong>🔇 Mute Button:</strong> Click to mute the tab</li>
             <li><strong>🔊 Unmute Button:</strong> Click to unmute the tab</li>
             <li>Button state updates immediately</li>
@@ -331,7 +446,7 @@
 
         <h3>🔗 Tab Interaction</h3>
         <p>When clicking on tabs in the list:</p>
-        <ul>
+        <ul class="styled-list">
             <li><strong>Click tab area:</strong> Switch to tab (behavior depends on popup settings)</li>
             <li><strong>Click mute button:</strong> Toggle mute without switching</li>
             <li><strong>Click switch button (🔗):</strong> Switch to tab and close popup</li>
@@ -344,13 +459,13 @@
         <p>Volume Master includes powerful keyboard shortcuts for hands-free audio control:</p>
 
         <h3>🔄 Tab Navigation</h3>
-        <ul>
+        <ul class="shortcuts-list">
             <li><kbd class="keyboard-shortcut">Ctrl+Shift+→</kbd> Switch to next audio tab</li>
             <li><kbd class="keyboard-shortcut">Ctrl+Shift+←</kbd> Switch to previous audio tab</li>
         </ul>
 
         <h3>🔇 Mute Controls</h3>
-        <ul>
+        <ul class="shortcuts-list">
             <li><kbd class="keyboard-shortcut">Ctrl+Shift+M</kbd> Toggle mute all audio tabs</li>
             <li><kbd class="keyboard-shortcut">Ctrl+Shift+X</kbd> Toggle mute current tab</li>
         </ul>
@@ -374,7 +489,7 @@
         
         <h3>🌙 Theme Toggle</h3>
         <p>Click the theme button in the header to switch between light and dark modes:</p>
-        <ul>
+        <ul class="styled-list">
             <li><strong>🌙 Light Mode:</strong> Default bright theme</li>
             <li><strong>☀️ Dark Mode:</strong> Easy on the eyes for low-light use</li>
             <li>Theme preference is saved automatically</li>
@@ -382,7 +497,7 @@
 
         <h3>📍 Popup Behavior</h3>
         <p>Control how the popup behaves when switching tabs:</p>
-        <ul>
+        <ul class="styled-list">
             <li><strong>📍 Pin Mode (Default):</strong> Popup stays open when switching tabs</li>
             <li><strong>🔗 Auto-Close Mode:</strong> Popup closes when switching tabs</li>
             <li>Toggle by clicking the pin button in the header</li>
@@ -390,7 +505,7 @@
 
         <h3>💾 Data Storage</h3>
         <p>Volume Master automatically saves:</p>
-        <ul>
+        <ul class="styled-list">
             <li>Volume level settings</li>
             <li>Audio enhancement mode</li>
             <li>Theme preference</li>
@@ -401,37 +516,39 @@
     <div class="section">
         <h2>🔧 Troubleshooting</h2>
         
-        <div class="feature-card">
-            <h4>🔇 No Audio Tabs Detected</h4>
-            <p><strong>Solutions:</strong></p>
-            <ul>
-                <li>Make sure audio is actually playing in a tab</li>
-                <li>Click the refresh button (🔄) in Volume Master</li>
-                <li>Reload the audio tab and try again</li>
-                <li>Check if the tab is muted in Chrome</li>
-            </ul>
-        </div>
+        <div class="troubleshoot-grid">
+            <div class="troubleshoot-card">
+                <h4>🔇 No Audio Tabs Detected</h4>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Make sure audio is actually playing in a tab</li>
+                    <li>Click the refresh button (🔄) in Volume Master</li>
+                    <li>Reload the audio tab and try again</li>
+                    <li>Check if the tab is muted in Chrome</li>
+                </ul>
+            </div>
 
-        <div class="feature-card">
-            <h4>🔊 Volume Not Changing</h4>
-            <p><strong>Solutions:</strong></p>
-            <ul>
-                <li>Ensure the tab is actively playing audio</li>
-                <li>Try refreshing the audio tab</li>
-                <li>Check if the website has its own volume controls</li>
-                <li>Disable other audio extensions temporarily</li>
-            </ul>
-        </div>
+            <div class="troubleshoot-card">
+                <h4>🔊 Volume Not Changing</h4>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Ensure the tab is actively playing audio</li>
+                    <li>Try refreshing the audio tab</li>
+                    <li>Check if the website has its own volume controls</li>
+                    <li>Disable other audio extensions temporarily</li>
+                </ul>
+            </div>
 
-        <div class="feature-card">
-            <h4>⌨️ Keyboard Shortcuts Not Working</h4>
-            <p><strong>Solutions:</strong></p>
-            <ul>
-                <li>Check if shortcuts conflict with other extensions</li>
-                <li>Go to chrome://extensions/shortcuts to verify</li>
-                <li>Try different key combinations</li>
-                <li>Restart Chrome and test again</li>
-            </ul>
+            <div class="troubleshoot-card">
+                <h4>⌨️ Keyboard Shortcuts Not Working</h4>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Check if shortcuts conflict with other extensions</li>
+                    <li>Go to chrome://extensions/shortcuts to verify</li>
+                    <li>Try different key combinations</li>
+                    <li>Restart Chrome and test again</li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -439,7 +556,7 @@
         <h2>💡 Tips & Tricks</h2>
         
         <h3>🎯 Best Practices</h3>
-        <ul>
+        <ul class="styled-list">
             <li><strong>Start Low:</strong> Begin with 100% volume and increase gradually</li>
             <li><strong>Use Presets:</strong> Quick buttons are faster than dragging the slider</li>
             <li><strong>Pin the Extension:</strong> Keep Volume Master visible in your toolbar</li>
@@ -447,7 +564,7 @@
         </ul>
 
         <h3>🎵 Audio Quality Tips</h3>
-        <ul>
+        <ul class="styled-list">
             <li><strong>Voice Mode:</strong> Great for online meetings and lectures</li>
             <li><strong>Bass Mode:</strong> Enhances music and movie audio</li>
             <li><strong>Sweet Spot:</strong> 150-250% often provides the best balance</li>
@@ -455,7 +572,7 @@
         </ul>
 
         <h3>🎮 Gaming Setup</h3>
-        <ul>
+        <ul class="styled-list">
             <li>Set game audio to Bass Mode for immersive sound</li>
             <li>Use Quick Switcher to manage Discord and game audio</li>
             <li>Pin popup mode for easy access during gameplay</li>
@@ -464,10 +581,10 @@
     </div>
 
     <div style="text-align: center; padding: 40px 0; color: #666;">
-        <p>Volume Master v1.0.5 | Made with ❤️ for better audio control</p>
+        <p>Volume Master v1.0.7 | Made with ❤️ for better audio control</p>
         <p style="margin-top: 10px;">
             🔊 Boost Your Audio | 🎵 Enhance Your Experience | 🚀 Control Your Sound
         </p>
     </div>
 </body>
-</html> 
+</html>
