@@ -1,208 +1,42 @@
 {
   "appName": {
     "message": "Volume Master",
-    "description": "Name of the extension"
+    "description": "The title of the application."
   },
   "appDescription": {
-    "message": "Up to 600% volume boost - The simplest and most reliable volume booster",
-    "description": "Description of the extension"
+    "message": "ការគ្រប់គ្រងកម្រិតសំឡេងនៅលើថេប",
+    "description": "The description of the application."
   },
   "loading": {
-    "message": "Loading audio tabs...",
-    "description": "Loading message when getting audio tabs"
+    "message": "កំពុងផ្ទុក...",
+    "description": "Loading message"
   },
   "refreshTabs": {
-    "message": "Refresh audio tabs",
-    "description": "Tooltip for refresh button"
+    "message": "ធ្វើឱ្យថេបស្រស់",
+    "description": "Refresh Tabs"
   },
-  "toggleDarkMode": {
-    "message": "Toggle dark mode",
-    "description": "Tooltip for dark mode toggle"
+  "options": {
+    "message": "ជម្រើស",
+    "description": "Options"
   },
-  "volumeValue": {
-    "message": "$VOLUME$%",
-    "description": "Volume percentage display",
-    "placeholders": {
-      "volume": {
-        "content": "$1",
-        "example": "100"
-      }
-    }
+  "help": {
+    "message": "ជំនួយ",
+    "description": "Help"
   },
-  "audioEnhancement": {
-    "message": "Audio Enhancement",
-    "description": "Section title for audio modes"
+  "donate": {
+    "message": "បរិច្ចាគ",
+    "description": "Donate"
   },
-  "modeDefault": {
-    "message": "Default",
-    "description": "Default audio mode"
+  "close": {
+    "message": "បិទ",
+    "description": "Close"
   },
-  "modeVoice": {
-    "message": "Voice",
-    "description": "Voice enhancement mode"
+  "content_mute": {
+    "message": "បិទសំឡេងថេប",
+    "description": "Mute Tab"
   },
-  "modeBass": {
-    "message": "Bass",
-    "description": "Bass enhancement mode"
-  },
-  "applyingMode": {
-    "message": "Applying audio mode...",
-    "description": "Message when applying audio mode"
-  },
-  "audioTabs": {
-    "message": "Audio Tabs",
-    "description": "Section title for audio tabs"
-  },
-  "tabsCount": {
-    "message": "($COUNT$)",
-    "description": "Number of audio tabs",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "3"
-      }
-    }
-  },
-  "applying": {
-    "message": "Applying...",
-    "description": "Generic applying message"
-  },
-  "noAudioTabs": {
-    "message": "🔇 No audio tabs detected",
-    "description": "Message when no audio tabs found"
-  },
-  "noAudioTabsHint": {
-    "message": "Play audio in any tab to control its volume",
-    "description": "Hint message for no audio tabs"
-  },
-  "errorPrefix": {
-    "message": "⚠️",
-    "description": "Error message prefix"
-  },
-  "errorLoadingSettings": {
-    "message": "Failed to load settings",
-    "description": "Error when loading settings fails"
-  },
-  "errorSavingSettings": {
-    "message": "Failed to save settings",
-    "description": "Error when saving settings fails"
-  },
-  "errorGettingTabs": {
-    "message": "Failed to get audio tabs",
-    "description": "Error when getting audio tabs fails"
-  },
-  "switchedToTab": {
-    "message": "✅ Switched to: $TITLE$",
-    "description": "Success message when switching tabs",
-    "placeholders": {
-      "title": {
-        "content": "$1",
-        "example": "YouTube"
-      }
-    }
-  },
-  "untitled": {
-    "message": "Untitled",
-    "description": "Default title for tabs without title"
-  },
-  "errorUpdateVolume": {
-    "message": "Failed to update volume",
-    "description": "Error when updating volume fails"
-  },
-  "errorLoadContentScript": {
-    "message": "Failed to load content script",
-    "description": "Error when loading content script fails"
-  },
-  "errorSwitchTab": {
-    "message": "Failed to switch tab",
-    "description": "Error when switching tab fails"
-  },
-  "errorSwitchWindow": {
-    "message": "Failed to switch window",
-    "description": "Error when switching window fails"
-  },
-  "errorRefreshTabs": {
-    "message": "Failed to refresh tabs",
-    "description": "Error when refreshing tabs fails"
-  },
-  "quickSwitcher": {
-    "message": "Quick Switcher",
-    "description": "Title for quick audio tab switcher"
-  },
-  "switchToNext": {
-    "message": "Next Audio Tab",
-    "description": "Switch to next audio tab button"
-  },
-  "switchToPrev": {
-    "message": "Previous Audio Tab", 
-    "description": "Switch to previous audio tab button"
-  },
-  "muteAll": {
-    "message": "Mute All",
-    "description": "Mute all audio tabs button"
-  },
-  "noNextTab": {
-    "message": "No next audio tab",
-    "description": "Message when there's no next audio tab"
-  },
-  "noPrevTab": {
-    "message": "No previous audio tab",
-    "description": "Message when there's no previous audio tab"
-  },
-  "allTabsMuted": {
-    "message": "All audio tabs muted",
-    "description": "Message when all tabs are muted"
-  },
-  "allTabsUnmuted": {
-    "message": "All audio tabs unmuted", 
-    "description": "Message when all tabs are unmuted"
-  },
-  "muteTab": {
-    "message": "Mute tab",
-    "description": "Tooltip for mute tab button"
-  },
-  "unmuteTab": {
-    "message": "Unmute tab",
-    "description": "Tooltip for unmute tab button"
-  },
-  "tabMuted": {
-    "message": "Tab muted",
-    "description": "Message when a tab is muted"
-  },
-  "tabUnmuted": {
-    "message": "Tab unmuted",
-    "description": "Message when a tab is unmuted"
-  },
-  "errorTogglingMute": {
-    "message": "Error toggling mute",
-    "description": "Error message when mute toggle fails"
-  },
-  "toggleCurrentTab": {
-    "message": "Toggle current tab mute",
-    "description": "Description for toggle current tab hotkey"
-  },
-  "switchAndClose": {
-    "message": "Switch to tab and close popup",
-    "description": "Tooltip for switch and close button"
-  },
-  "keepPopupOpen": {
-    "message": "Keep popup open when switching tabs",
-    "description": "Tooltip for popup behavior toggle when active"
-  },
-  "allowPopupClose": {
-    "message": "Allow popup to close when switching tabs",
-    "description": "Tooltip for popup behavior toggle when inactive"
-  },
-  "popupWillStayOpen": {
-    "message": "Popup will stay open",
-    "description": "Message when popup behavior is set to stay open"
-  },
-  "popupWillClose": {
-    "message": "Popup will close on tab switch",
-    "description": "Message when popup behavior is set to close"
-  },
-  "userGuide": {
-    "message": "User Guide",
-    "description": "Tooltip for help button"
+  "content_unmute": {
+    "message": "បើកសំឡេងថេប",
+    "description": "Unmute Tab"
   }
 }

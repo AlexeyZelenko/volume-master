@@ -4,39 +4,39 @@
     "description": "The title of the application."
   },
   "appDescription": {
-    "message": "ट्याबमा भोल्युम नियन्त्रण",
+    "message": "ටැබ් මත ශබ්ද පාලනය",
     "description": "The description of the application."
   },
   "loading": {
-    "message": "लोड हुँदैछ...",
+    "message": "පූරණය වෙමින්...",
     "description": "Loading message"
   },
   "refreshTabs": {
-    "message": "ट्याबहरू ताजा गर्नुहोस्",
+    "message": "ටැබ් නැවුම් කරන්න",
     "description": "Refresh Tabs"
   },
   "options": {
-    "message": "विकल्पहरू",
+    "message": "විකල්ප",
     "description": "Options"
   },
   "help": {
-    "message": "मद्दत",
+    "message": "උදව්",
     "description": "Help"
   },
   "donate": {
-    "message": "दान",
+    "message": "පරිත්යාග",
     "description": "Donate"
   },
   "close": {
-    "message": "बन्द",
+    "message": "වසන්න",
     "description": "Close"
   },
   "content_mute": {
-    "message": "ट्याब म्यूट गर्नुहोस्",
+    "message": "ටැබ් නිහඬ කරන්න",
     "description": "Mute Tab"
   },
   "content_unmute": {
-    "message": "ट्याब अनम्यूट गर्नुहोस्",
+    "message": "ටැබ් හඬ සක්‍රිය කරන්න",
     "description": "Unmute Tab"
   }
 }

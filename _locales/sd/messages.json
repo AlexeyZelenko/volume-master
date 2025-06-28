@@ -4,39 +4,39 @@
     "description": "The title of the application."
   },
   "appDescription": {
-    "message": "ट्याबमा भोल्युम नियन्त्रण",
+    "message": "ٽيب تي واليوم ڪنٽرول",
     "description": "The description of the application."
   },
   "loading": {
-    "message": "लोड हुँदैछ...",
+    "message": "لوڊ ٿي رهيو آهي...",
     "description": "Loading message"
   },
   "refreshTabs": {
-    "message": "ट्याबहरू ताजा गर्नुहोस्",
+    "message": "ٽيبس تازو ڪريو",
     "description": "Refresh Tabs"
   },
   "options": {
-    "message": "विकल्पहरू",
+    "message": "اختيار",
     "description": "Options"
   },
   "help": {
-    "message": "मद्दत",
+    "message": "مدد",
     "description": "Help"
   },
   "donate": {
-    "message": "दान",
+    "message": "عطيو",
     "description": "Donate"
   },
   "close": {
-    "message": "बन्द",
+    "message": "بند ڪريو",
     "description": "Close"
   },
   "content_mute": {
-    "message": "ट्याब म्यूट गर्नुहोस्",
+    "message": "ٽيب خاموش ڪريو",
     "description": "Mute Tab"
   },
   "content_unmute": {
-    "message": "ट्याब अनम्यूट गर्नुहोस्",
+    "message": "ٽيب جو آواز چالو ڪريو",
     "description": "Unmute Tab"
   }
 }
